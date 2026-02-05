@@ -41,7 +41,7 @@ export const APPS_CONFIG: AppConfig[] = [
   },
   {
     id: 'ppbb',
-    name: 'P&P & B&B',
+    name: 'P&P and B&B',
     orderId: 3,
     stores: [
       {
