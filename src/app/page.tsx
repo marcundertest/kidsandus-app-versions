@@ -55,28 +55,34 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <div className="container mx-auto max-w-5xl flex-1 px-4 py-6">
-        <header className="mb-6 border-b pb-6">
-          <div className="mb-4 flex items-center justify-between">
+      <header className="bg-background/95 supports-filter:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur-md">
+        <div className="container mx-auto flex max-w-5xl items-center justify-between px-4 py-2 md:py-3">
+          <div
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="cursor-pointer transition-opacity hover:opacity-80"
+          >
             <h1 className="text-xl font-semibold tracking-tight">Kids&Us Apps Versions</h1>
-            <ThemeToggle />
+          </div>
+          <ThemeToggle />
+        </div>
+      </header>
+
+      <div className="container mx-auto max-w-5xl flex-1 px-4 py-6">
+        <main>
+          <div className="mb-6">
+            <UpdateControl
+              lastUpdate={data?.lastUpdate ?? null}
+              onUpdate={handleUpdate}
+              isUpdating={isUpdating}
+              isLoading={isLoading}
+            />
+            {error && (
+              <p className="text-destructive animate-in fade-in mt-2 text-xs duration-300">
+                Error: {error}
+              </p>
+            )}
           </div>
 
-          <UpdateControl
-            lastUpdate={data?.lastUpdate ?? null}
-            onUpdate={handleUpdate}
-            isUpdating={isUpdating}
-            isLoading={isLoading}
-          />
-
-          {error && (
-            <p className="text-destructive animate-in fade-in mt-2 text-xs duration-300">
-              Error: {error}
-            </p>
-          )}
-        </header>
-
-        <main>
           {!isLoading && !data ? (
             <div className="bg-card overflow-hidden rounded-md border">
               <table className="w-full border-collapse">
