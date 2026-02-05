@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { format } from 'date-fns';
+import { useMounted } from '@/hooks/use-mounted';
 
 interface UpdateControlProps {
   lastUpdate: string | null;
@@ -15,12 +16,7 @@ interface UpdateControlProps {
 export function UpdateControl({ lastUpdate, onUpdate, isUpdating, isLoading }: UpdateControlProps) {
   const [cooldownRemaining, setCooldownRemaining] = useState<number>(0);
   const [progress, setProgress] = useState(0);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    // eslint-disable-next-line
-    setMounted(true);
-  }, []);
+  const mounted = useMounted();
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
