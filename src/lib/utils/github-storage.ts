@@ -58,7 +58,10 @@ export class GithubStorage {
     }
   }
 
-  async saveData(content: unknown, message: string = 'Update data.json via App'): Promise<void> {
+  async saveData(
+    content: unknown,
+    message: string = 'chore(data): update data.json'
+  ): Promise<void> {
     try {
       // 1. Get current SHA (required for update)
       let sha: string | undefined;
@@ -89,6 +92,10 @@ export class GithubStorage {
         message,
         content: contentBase64,
         sha,
+        author: {
+          name: 'Netlify',
+          email: 'bot@netlify.com',
+        },
         committer: {
           name: 'Netlify',
           email: 'bot@netlify.com',
