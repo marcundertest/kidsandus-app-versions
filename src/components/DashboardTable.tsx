@@ -28,7 +28,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
       <div className="space-y-4 md:hidden">
         {apps.map((app) => (
           <Card key={app.id} className="border-muted overflow-hidden shadow-sm">
-            <CardHeader className="bg-muted/30 flex-row items-center gap-3 space-y-0 px-4 py-3">
+            <CardHeader className="bg-muted/30 flex flex-row items-center gap-3 space-y-0 px-4 py-3">
               {app.icon ? (
                 <Image
                   src={app.icon}
@@ -90,16 +90,16 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
           <Table>
             <TableHeader className="bg-muted">
               <TableRow className="hover:bg-transparent">
-                <TableHead className="text-foreground h-10 w-75 px-3 py-2 text-[0.75rem] font-semibold">
+                <TableHead className="h-10 w-[40%] px-3 py-2 text-[0.75rem] font-semibold">
                   Application
                 </TableHead>
-                <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
+                <TableHead className="h-10 w-[25%] px-3 py-2 text-[0.75rem] font-semibold">
                   Store
                 </TableHead>
-                <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
+                <TableHead className="h-10 w-[15%] px-3 py-2 text-[0.75rem] font-semibold">
                   Version
                 </TableHead>
-                <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
+                <TableHead className="h-10 w-[20%] px-3 py-2 text-[0.75rem] font-semibold">
                   Last Update
                 </TableHead>
               </TableRow>
@@ -173,10 +173,10 @@ function TableSkeleton() {
   return (
     <div className="space-y-4">
       {/* Mobile Skeleton */}
-      <div className="space-y-4 lg:hidden">
+      <div className="space-y-4 md:hidden">
         {Array.from({ length: 4 }).map((_, i) => (
           <Card key={i} className="border-muted overflow-hidden shadow-sm">
-            <div className="bg-muted/20 flex items-center gap-3 border-b px-4 py-3">
+            <div className="bg-muted/30 flex items-center gap-3 px-4 py-3">
               <Skeleton className="h-8 w-8 rounded-md" />
               <Skeleton className="h-4 w-32" />
             </div>
@@ -185,11 +185,11 @@ function TableSkeleton() {
                 <div key={j} className="flex flex-col gap-2 p-4">
                   <div className="flex items-center justify-between">
                     <Skeleton className="h-4 w-20" />
-                    <Skeleton className="h-5 w-12 rounded-full" />
+                    <Skeleton className="h-5 w-12 rounded-[calc(var(--radius)-2px)]" />
                   </div>
                   <div className="flex items-center justify-between">
-                    <Skeleton className="h-3 w-16" />
-                    <Skeleton className="h-3 w-24" />
+                    <Skeleton className="h-4 w-16" />
+                    <Skeleton className="h-4 w-24" />
                   </div>
                 </div>
               ))}
@@ -199,33 +199,41 @@ function TableSkeleton() {
       </div>
 
       {/* Desktop Table Skeleton */}
-      <div className="hidden lg:block">
+      <div className="hidden md:block">
         <div className="bg-card overflow-hidden rounded-md border shadow-sm">
           <Table>
-            <TableHeader className="bg-muted/50">
+            <TableHeader className="bg-muted">
               <TableRow className="hover:bg-transparent">
-                <TableHead className="w-75">Application</TableHead>
-                <TableHead className="w-45">Store</TableHead>
-                <TableHead className="w-30">Version</TableHead>
-                <TableHead>Last Update</TableHead>
+                <TableHead className="h-10 w-[40%] px-3 py-2 text-[0.75rem] font-semibold">
+                  Application
+                </TableHead>
+                <TableHead className="h-10 w-[25%] px-3 py-2 text-[0.75rem] font-semibold">
+                  Store
+                </TableHead>
+                <TableHead className="h-10 w-[15%] px-3 py-2 text-[0.75rem] font-semibold">
+                  Version
+                </TableHead>
+                <TableHead className="h-10 w-[20%] px-3 py-2 text-[0.75rem] font-semibold">
+                  Last Update
+                </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {Array.from({ length: 8 }).map((_, i) => (
-                <TableRow key={i}>
-                  <TableCell className="border-r px-4 py-4">
+                <TableRow key={i} className="border-b last:border-0 hover:bg-transparent">
+                  <TableCell className="px-3 py-2.5">
                     <div className="flex items-center gap-2">
-                      <Skeleton className="h-6 w-6 rounded-sm" />
+                      <Skeleton className="h-6 w-6 rounded-md" />
                       <Skeleton className="h-4 w-32" />
                     </div>
                   </TableCell>
-                  <TableCell className="px-4 py-4">
+                  <TableCell className="px-3 py-2.5">
                     <Skeleton className="h-4 w-20" />
                   </TableCell>
-                  <TableCell className="px-4 py-4">
-                    <Skeleton className="h-5 w-12 rounded-full" />
+                  <TableCell className="px-3 py-2.5">
+                    <Skeleton className="h-5 w-12 rounded-[calc(var(--radius)-2px)]" />
                   </TableCell>
-                  <TableCell className="px-4 py-4">
+                  <TableCell className="px-3 py-2.5">
                     <Skeleton className="h-4 w-16" />
                   </TableCell>
                 </TableRow>
