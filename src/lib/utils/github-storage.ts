@@ -90,8 +90,8 @@ export class GithubStorage {
         content: contentBase64,
         sha,
         committer: {
-          name: 'Kids&Us App',
-          email: 'app@kidsandus.local', // Github will use the authenticated user's email if not specified, or this dummy one
+          name: 'Netlify',
+          email: 'bot@netlify.com',
         },
       });
 
