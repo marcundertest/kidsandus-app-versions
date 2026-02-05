@@ -16,7 +16,7 @@ export function Footer() {
 
           <div className="text-muted-foreground flex items-center gap-4 text-xs">
             <a
-              href="https://github.com/marcundertest/kidsandus-apps-versions"
+              href="https://github.com/marcundertest/kidsandus-app-versions"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-foreground transition-colors hover:underline"

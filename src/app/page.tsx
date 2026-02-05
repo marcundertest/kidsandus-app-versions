@@ -61,7 +61,7 @@ export default function Home() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="cursor-pointer transition-opacity hover:opacity-80"
           >
-            <h1 className="text-xl font-semibold tracking-tight">Kids&Us Apps Versions</h1>
+            <h1 className="text-xl font-semibold tracking-tight">Kids&Us App Versions</h1>
           </div>
           <ThemeToggle />
         </div>

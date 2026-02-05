@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Kids&Us Apps Versions',
+    name: 'Kids&Us App Versions',
     short_name: 'Kids&Us Apps',
-    description: 'Dashboard for monitoring Kids&Us mobile and desktop apps versions across stores.',
+    description: 'Dashboard for monitoring Kids&Us mobile and desktop app versions across stores.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

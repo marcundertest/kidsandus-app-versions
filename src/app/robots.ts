@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://kidsandus-apps-versions.netlify.app/sitemap.xml',
+    sitemap: 'https://kidsandus-app-versions.netlify.app/sitemap.xml',
   };
 }

@@ -4,7 +4,7 @@ import { ImageResponse } from 'next/og';
 export const runtime = 'edge';
 
 // Image metadata
-export const alt = 'Kids&Us Apps Versions Dashboard';
+export const alt = 'Kids&Us App Versions Dashboard';
 export const size = {
   width: 1200,
   height: 630,
@@ -43,7 +43,7 @@ export default async function Image() {
       >
         Kids&Us
       </div>
-      <div style={{ fontSize: 80, fontWeight: 'bold' }}>Apps Versions</div>
+      <div style={{ fontSize: 80, fontWeight: 'bold' }}>App Versions</div>
       <div style={{ fontSize: 32, marginTop: 40, opacity: 0.8, fontWeight: 'normal' }}>
         Real-time Version Dashboard
       </div>

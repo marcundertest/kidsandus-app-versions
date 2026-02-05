@@ -13,13 +13,13 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kidsandus-apps-versions.netlify.app/'),
+  metadataBase: new URL('https://kidsandus-app-versions.netlify.app/'),
   title: {
-    default: 'Kids&Us Apps Versions',
-    template: '%s | Kids&Us Apps Versions',
+    default: 'Kids&Us App Versions',
+    template: '%s | Kids&Us App Versions',
   },
   description:
-    'Dashboard for monitoring Kids&Us mobile and desktop apps versions across stores (Google Play, App Store, Microsoft Store).',
+    'Dashboard for monitoring Kids&Us mobile and desktop app versions across stores (Google Play, App Store, Microsoft Store).',
   keywords: ['Kids&Us', 'Apps', 'Versions', 'Dashboard', 'Mobile', 'Education', 'Tracking'],
   authors: [{ name: 'Marc Galindo', url: 'https://marcundertest.com' }],
   creator: 'Marc Galindo',
@@ -30,23 +30,23 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'Kids&Us Apps Versions',
-    description: 'Dashboard for monitoring Kids&Us mobile and desktop apps versions across stores.',
-    url: 'https://kidsandus-apps-versions.netlify.app/',
-    siteName: 'Kids&Us Apps Versions',
+    title: 'Kids&Us App Versions',
+    description: 'Dashboard for monitoring Kids&Us mobile and desktop app versions across stores.',
+    url: 'https://kidsandus-app-versions.netlify.app/',
+    siteName: 'Kids&Us App Versions',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kids&Us Apps Versions',
-    description: 'Dashboard for monitoring Kids&Us mobile and desktop apps versions across stores.',
+    title: 'Kids&Us App Versions',
+    description: 'Dashboard for monitoring Kids&Us mobile and desktop app versions across stores.',
     creator: '@marcundertest',
   },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Kids&Us Apps Versions',
+    title: 'Kids&Us App Versions',
   },
   icons: {
     icon: [

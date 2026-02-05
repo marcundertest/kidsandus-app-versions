@@ -1,16 +1,16 @@
-# 🚀 Kids&Us Apps Versions
+# 🚀 Kids&Us App Versions
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-[![GitHub stars](https://img.shields.io/github/stars/marcundertest/kidsandus-apps-versions?style=for-the-badge)](https://github.com/marcundertest/kidsandus-apps-versions/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/marcundertest/kidsandus-apps-versions?style=for-the-badge)](https://github.com/marcundertest/kidsandus-apps-versions/network)
-[![GitHub issues](https://img.shields.io/github/issues/marcundertest/kidsandus-apps-versions?style=for-the-badge)](https://github.com/marcundertest/kidsandus-apps-versions/issues)
+[![GitHub stars](https://img.shields.io/github/stars/marcundertest/kidsandus-app-versions?style=for-the-badge)](https://github.com/marcundertest/kidsandus-app-versions/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/marcundertest/kidsandus-app-versions?style=for-the-badge)](https://github.com/marcundertest/kidsandus-app-versions/network)
+[![GitHub issues](https://img.shields.io/github/issues/marcundertest/kidsandus-app-versions?style=for-the-badge)](https://github.com/marcundertest/kidsandus-app-versions/issues)
 
 **A comprehensive, localized, and themeable overview of Kids&Us application versions.**
 
-[Live Demo](https://kidsandus-apps-versions.netlify.app/)
+[Live Demo](https://kidsandus-app-versions.netlify.app/)
 
 ## 📖 Overview
 
@@ -72,8 +72,8 @@ Follow these steps to get the development environment up and running.
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/marcundertest/kidsandus-apps-versions.git
-   cd kidsandus-apps-versions
+   git clone https://github.com/marcundertest/kidsandus-app-versions.git
+   cd kidsandus-app-versions
    ```
 
 2. **Install dependencies**
@@ -94,7 +94,7 @@ Follow these steps to get the development environment up and running.
 ## 📁 Project Structure
 
 ```text
-kidsandus-apps-versions/
+kidsandus-app-versions/
 ├── .gitignore
 ├── .prettierrc
 ├── components.json
@@ -180,7 +180,7 @@ This command generates the production-ready assets in the `.next` directory.
 This application is designed to be easily deployable to platforms like Netlify, Vercel, or any Node.js compatible hosting environment.
 
 - **Netlify/Vercel**: The `npm run build` command creates the necessary output for static site hosting (if using static export) or serverless functions for API routes and SSR. Deployment can be automated by connecting your GitHub repository.
-  - The repository's `homepage` metadata indicates it's deployed on Netlify: [https://kidsandus-apps-versions.netlify.app/](https://kidsandus-apps-versions.netlify.app/)
+  - The repository's `homepage` metadata indicates it's deployed on Netlify: [https://kidsandus-app-versions.netlify.app/](https://kidsandus-app-versions.netlify.app/)
 
 ## 📚 API Reference
 
@@ -220,7 +220,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support & Contact
 
-- 🐛 Issues: [GitHub Issues](https://github.com/marcundertest/kidsandus-apps-versions/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/marcundertest/kidsandus-app-versions/issues)
 - 📧 For general inquiries, please refer to the repository owner's profile: [marcundertest](https://github.com/marcundertest)
 
 ---
