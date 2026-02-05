@@ -1,20 +1,17 @@
-import { NextResponse } from "next/server";
-import fs from "fs/promises";
-import path from "path";
+import { NextResponse } from 'next/server';
+import fs from 'fs/promises';
+import { getDataPath } from '@/lib/utils/fs';
 
 export async function GET() {
-  const dataPath = path.join(process.cwd(), "data.json");
+  const dataPath = getDataPath();
 
   try {
-    const content = await fs.readFile(dataPath, "utf8");
+    const content = await fs.readFile(dataPath, 'utf8');
     return NextResponse.json(JSON.parse(content));
   } catch (error: any) {
-    if (error.code === "ENOENT") {
-      return NextResponse.json({ error: "Data not found" }, { status: 404 });
+    if (error.code === 'ENOENT') {
+      return NextResponse.json({ error: 'Data not found' }, { status: 404 });
     }
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 },
-    );
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }

@@ -1,21 +1,21 @@
-import { NextResponse } from "next/server";
-import fs from "fs/promises";
-import path from "path";
-import { ScraperService } from "@/lib/scrapers/service";
-import { APPS_CONFIG } from "@/lib/config";
+import { NextResponse } from 'next/server';
+import fs from 'fs/promises';
+import { ScraperService } from '@/lib/scrapers/service';
+import { APPS_CONFIG } from '@/lib/config';
+import { getDataPath } from '@/lib/utils/fs';
 
 const COOLDOWN_MINUTES = 60;
 
 export async function POST() {
-  const dataPath = path.join(process.cwd(), "data.json");
+  const dataPath = getDataPath();
 
   try {
     let currentData;
     try {
-      const content = await fs.readFile(dataPath, "utf8");
+      const content = await fs.readFile(dataPath, 'utf8');
       currentData = JSON.parse(content);
     } catch {
-      // If file doesn't exist, proceed with update
+      // Ignore read errors
     }
 
     if (currentData?.lastUpdate) {
@@ -26,9 +26,9 @@ export async function POST() {
         return NextResponse.json(
           {
             success: false,
-            error: "Rate limit: Please wait 60 minutes between updates",
+            error: `Rate limit: Please wait ${COOLDOWN_MINUTES} minutes between updates`,
           },
-          { status: 429 },
+          { status: 429 }
         );
       }
     }
@@ -36,19 +36,24 @@ export async function POST() {
     const scraperService = new ScraperService();
     const newData = await scraperService.scrapeAll(APPS_CONFIG);
 
-    await fs.writeFile(dataPath, JSON.stringify(newData, null, 2));
+    try {
+      await fs.writeFile(dataPath, JSON.stringify(newData, null, 2));
+    } catch (writeError) {
+      console.error('Persistence failed:', writeError);
+    }
 
     return NextResponse.json({
       success: true,
       data: newData,
     });
   } catch (error: any) {
+    console.error('Update failed:', error);
     return NextResponse.json(
       {
         success: false,
         error: error.message,
       },
-      { status: 500 },
+      { status: 500 }
     );
   }
 }
