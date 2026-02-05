@@ -8,7 +8,8 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import { Badge } from '@/components/ui/badge';
+
+import { VersionBadge } from '@/components/VersionBadge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -61,12 +62,10 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                       {store.name}
                     </a>
                     {store.version !== 'N/A' ? (
-                      <Badge
-                        variant="secondary"
+                      <VersionBadge
+                        version={store.version}
                         className="shrink-0 rounded-full px-2 py-0.5 font-mono text-[12px] md:text-[10px]"
-                      >
-                        {store.version}
-                      </Badge>
+                      />
                     ) : (
                       <span className="text-muted-foreground shrink-0 text-[12px] italic md:text-[10px]">
                         N/A
@@ -145,12 +144,10 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                     </TableCell>
                     <TableCell className="px-3 py-2.5">
                       {store.version !== 'N/A' ? (
-                        <Badge
-                          variant="secondary"
+                        <VersionBadge
+                          version={store.version}
                           className="rounded-[calc(var(--radius)-2px)] px-2 py-0.5 font-mono text-[0.6875rem]"
-                        >
-                          {store.version}
-                        </Badge>
+                        />
                       ) : (
                         <span className="text-muted-foreground text-[0.6875rem] italic">N/A</span>
                       )}
