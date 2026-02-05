@@ -72,7 +72,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                     )}
                   </div>
                   <div className="text-muted-foreground flex items-center justify-between text-[11px]">
-                    <span>Actualización:</span>
+                    <span>Last Update:</span>
                     <span className="font-medium">{store.lastUpdateDate}</span>
                   </div>
                 </div>
