@@ -26,7 +26,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
       <Table>
         <TableHeader className="bg-muted">
           <TableRow className="hover:bg-transparent">
-            <TableHead className="text-foreground h-10 w-75 px-3 py-2 text-[0.75rem] font-semibold">
+            <TableHead className="text-foreground h-10 w-[300px] px-3 py-2 text-[0.75rem] font-semibold">
               Application
             </TableHead>
             <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
@@ -48,7 +48,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                 className="hover:bg-muted/50 border-b transition-colors last:border-0"
               >
                 {index === 0 && (
-                  <TableCell rowSpan={app.stores.length} className="px-3 py-2.5 align-top">
+                  <TableCell rowSpan={app.stores.length} className="px-3 py-[0.625rem] align-top">
                     <div className="flex items-start gap-2">
                       {app.icon ? (
                         <Image
@@ -69,7 +69,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                     </div>
                   </TableCell>
                 )}
-                <TableCell className="px-3 py-2.5">
+                <TableCell className="px-3 py-[0.625rem]">
                   <a
                     href={store.url}
                     target="_blank"
@@ -79,7 +79,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                     {store.name}
                   </a>
                 </TableCell>
-                <TableCell className="px-3 py-2.5">
+                <TableCell className="px-3 py-[0.625rem]">
                   {store.version !== 'N/A' ? (
                     <Badge
                       variant="secondary"
@@ -91,7 +91,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                     <span className="text-muted-foreground text-[0.6875rem] italic">N/A</span>
                   )}
                 </TableCell>
-                <TableCell className="px-3 py-2.5 text-[0.8125rem] whitespace-nowrap">
+                <TableCell className="px-3 py-[0.625rem] text-[0.8125rem] whitespace-nowrap">
                   {store.lastUpdateDate}
                 </TableCell>
               </TableRow>
@@ -118,19 +118,19 @@ function TableSkeleton() {
         <TableBody>
           {Array.from({ length: 8 }).map((_, i) => (
             <TableRow key={i}>
-              <TableCell className="px-3 py-2.5">
+              <TableCell className="px-3 py-[0.625rem]">
                 <div className="flex items-center gap-2">
                   <Skeleton className="h-6 w-6 rounded-sm" />
                   <Skeleton className="h-4 w-32" />
                 </div>
               </TableCell>
-              <TableCell className="px-3 py-2.5">
+              <TableCell className="px-3 py-[0.625rem]">
                 <Skeleton className="h-4 w-20" />
               </TableCell>
-              <TableCell className="px-3 py-2.5">
+              <TableCell className="px-3 py-[0.625rem]">
                 <Skeleton className="h-5 w-12 rounded-full" />
               </TableCell>
-              <TableCell className="px-3 py-2.5">
+              <TableCell className="px-3 py-[0.625rem]">
                 <Skeleton className="h-4 w-16" />
               </TableCell>
             </TableRow>
