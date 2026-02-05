@@ -60,18 +60,18 @@ export function UpdateControl({ lastUpdate, onUpdate, isUpdating }: UpdateContro
 
   return (
     <div className="space-y-3">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+      <div className="flex items-center gap-3">
         <Button
           onClick={onUpdate}
           disabled={isUpdating || cooldownRemaining > 0}
           size="sm"
-          className="h-8 w-full px-4 sm:w-auto"
+          className="h-8 w-fit shrink-0 px-4"
         >
           {isUpdating ? 'Updating...' : 'Update Data'}
         </Button>
-        <span className="text-muted-foreground text-center text-[13px] sm:text-left">
+        <span className="text-muted-foreground text-[13px] whitespace-nowrap">
           Last update: {lastUpdate ? formatLastUpdate(lastUpdate) : 'Never'}
-          {cooldownRemaining > 0 && ` (Cooldown: ${cooldownRemaining}m)`}
+          {cooldownRemaining > 0 && ` (${cooldownRemaining}m)`}
         </span>
       </div>
 
