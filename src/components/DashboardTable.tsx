@@ -25,141 +25,148 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
   return (
     <div className="space-y-4">
       {/* Mobile Card View */}
-      <div className="grid grid-cols-1 gap-4 md:hidden">
-        {apps.map((app) => (
-          <Card key={app.id} className="overflow-hidden shadow-sm">
-            <CardHeader className="bg-muted/30 flex-row items-center gap-3 space-y-0 px-4 py-3">
-              {app.icon ? (
-                <Image
-                  src={app.icon}
-                  alt={app.name}
-                  width={32}
-                  height={32}
-                  className="h-8 w-8 rounded-md border object-cover"
-                  unoptimized
-                  onError={(e) => (e.currentTarget.style.display = 'none')}
-                />
-              ) : (
-                <div className="bg-muted text-muted-foreground flex h-8 w-8 items-center justify-center rounded-md border text-xs font-bold">
-                  {app.name.charAt(0)}
-                </div>
-              )}
-              <CardTitle className="text-base leading-none font-bold tracking-tight">
-                {app.name}
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="divide-y p-0">
-              {app.stores.map((store) => (
-                <div key={store.id} className="flex flex-col gap-2 p-4">
-                  <div className="flex items-center justify-between">
-                    <a
-                      href={store.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[13px] font-medium hover:underline"
-                    >
-                      {store.name}
-                    </a>
-                    {store.version !== 'N/A' ? (
-                      <Badge
-                        variant="secondary"
-                        className="rounded-[calc(var(--radius)-2px)] px-2 py-0.5 font-mono text-[0.625rem]"
+      <div className="block md:hidden">
+        <div className="grid grid-cols-1 gap-4">
+          {apps.map((app) => (
+            <Card key={app.id} className="overflow-hidden shadow-sm">
+              <CardHeader className="bg-muted/30 flex-row items-center gap-3 space-y-0 px-4 py-3">
+                {app.icon ? (
+                  <Image
+                    src={app.icon}
+                    alt={app.name}
+                    width={32}
+                    height={32}
+                    className="h-8 w-8 rounded-md border object-cover"
+                    unoptimized
+                    onError={(e) => (e.currentTarget.style.display = 'none')}
+                  />
+                ) : (
+                  <div className="bg-muted text-muted-foreground flex h-8 w-8 items-center justify-center rounded-md border text-xs font-bold">
+                    {app.name.charAt(0)}
+                  </div>
+                )}
+                <CardTitle className="text-base leading-none font-bold tracking-tight">
+                  {app.name}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="divide-y p-0">
+                {app.stores.map((store) => (
+                  <div key={store.id} className="flex flex-col gap-2 p-4">
+                    <div className="flex items-center justify-between">
+                      <a
+                        href={store.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[13px] font-medium hover:underline"
                       >
-                        {store.version}
-                      </Badge>
-                    ) : (
-                      <span className="text-muted-foreground text-[0.625rem] italic">N/A</span>
-                    )}
+                        {store.name}
+                      </a>
+                      {store.version !== 'N/A' ? (
+                        <Badge
+                          variant="secondary"
+                          className="rounded-[calc(var(--radius)-2px)] px-2 py-0.5 font-mono text-[0.625rem]"
+                        >
+                          {store.version}
+                        </Badge>
+                      ) : (
+                        <span className="text-muted-foreground text-[0.625rem] italic">N/A</span>
+                      )}
+                    </div>
+                    <div className="text-muted-foreground flex items-center justify-between text-[11px]">
+                      <span>Last update:</span>
+                      <span className="font-medium">{store.lastUpdateDate}</span>
+                    </div>
                   </div>
-                  <div className="text-muted-foreground flex items-center justify-between text-[11px]">
-                    <span>Last update:</span>
-                    <span className="font-medium">{store.lastUpdateDate}</span>
-                  </div>
-                </div>
-              ))}
-            </CardContent>
-          </Card>
-        ))}
+                ))}
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
 
       {/* Desktop Table View */}
-      <div className="bg-card hidden overflow-hidden rounded-md border md:block">
-        <Table>
-          <TableHeader className="bg-muted">
-            <TableRow className="hover:bg-transparent">
-              <TableHead className="text-foreground h-10 w-[300px] px-3 py-2 text-[0.75rem] font-semibold">
-                Application
-              </TableHead>
-              <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
-                Store
-              </TableHead>
-              <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
-                Version
-              </TableHead>
-              <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
-                Last Update
-              </TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {apps.map((app) =>
-              app.stores.map((store, index) => (
-                <TableRow
-                  key={`${app.id}-${store.id}`}
-                  className="hover:bg-muted/50 border-b transition-colors last:border-0"
-                >
-                  {index === 0 && (
-                    <TableCell rowSpan={app.stores.length} className="px-3 py-[0.625rem] align-top">
-                      <div className="flex items-start gap-2">
-                        {app.icon ? (
-                          <Image
-                            src={app.icon}
-                            alt={app.name}
-                            width={24}
-                            height={24}
-                            className="app-icon"
-                            unoptimized
-                            onError={(e) => (e.currentTarget.style.display = 'none')}
-                          />
-                        ) : (
-                          <div className="app-icon bg-muted text-muted-foreground flex items-center justify-center text-xs font-bold">
-                            {app.name.charAt(0)}
-                          </div>
-                        )}
-                        <span className="pt-0.5 leading-tight font-semibold">{app.name}</span>
-                      </div>
-                    </TableCell>
-                  )}
-                  <TableCell className="px-3 py-[0.625rem]">
-                    <a
-                      href={store.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground transition-colors hover:underline"
-                    >
-                      {store.name}
-                    </a>
-                  </TableCell>
-                  <TableCell className="px-3 py-[0.625rem]">
-                    {store.version !== 'N/A' ? (
-                      <Badge
-                        variant="secondary"
-                        className="rounded-[calc(var(--radius)-2px)] px-2 py-0.5 font-mono text-[0.6875rem]"
+      <div className="bg-card hidden overflow-hidden overflow-x-auto rounded-md border md:block">
+        <div className="inline-block min-w-full align-middle">
+          <Table>
+            <TableHeader className="bg-muted">
+              <TableRow className="hover:bg-transparent">
+                <TableHead className="text-foreground h-10 w-[300px] px-3 py-2 text-[0.75rem] font-semibold">
+                  Application
+                </TableHead>
+                <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
+                  Store
+                </TableHead>
+                <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
+                  Version
+                </TableHead>
+                <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
+                  Last Update
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {apps.map((app) =>
+                app.stores.map((store, index) => (
+                  <TableRow
+                    key={`${app.id}-${store.id}`}
+                    className="hover:bg-muted/50 border-b transition-colors last:border-0"
+                  >
+                    {index === 0 && (
+                      <TableCell
+                        rowSpan={app.stores.length}
+                        className="px-3 py-[0.625rem] align-top"
                       >
-                        {store.version}
-                      </Badge>
-                    ) : (
-                      <span className="text-muted-foreground text-[0.6875rem] italic">N/A</span>
+                        <div className="flex items-start gap-2">
+                          {app.icon ? (
+                            <Image
+                              src={app.icon}
+                              alt={app.name}
+                              width={24}
+                              height={24}
+                              className="app-icon"
+                              unoptimized
+                              onError={(e) => (e.currentTarget.style.display = 'none')}
+                            />
+                          ) : (
+                            <div className="app-icon bg-muted text-muted-foreground flex items-center justify-center text-xs font-bold">
+                              {app.name.charAt(0)}
+                            </div>
+                          )}
+                          <span className="pt-0.5 leading-tight font-semibold">{app.name}</span>
+                        </div>
+                      </TableCell>
                     )}
-                  </TableCell>
-                  <TableCell className="px-3 py-[0.625rem] text-[0.8125rem] whitespace-nowrap">
-                    {store.lastUpdateDate}
-                  </TableCell>
-                </TableRow>
-              ))
-            )}
-          </TableBody>
-        </Table>
+                    <TableCell className="px-3 py-[0.625rem]">
+                      <a
+                        href={store.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground transition-colors hover:underline"
+                      >
+                        {store.name}
+                      </a>
+                    </TableCell>
+                    <TableCell className="px-3 py-[0.625rem]">
+                      {store.version !== 'N/A' ? (
+                        <Badge
+                          variant="secondary"
+                          className="rounded-[calc(var(--radius)-2px)] px-2 py-0.5 font-mono text-[0.6875rem]"
+                        >
+                          {store.version}
+                        </Badge>
+                      ) : (
+                        <span className="text-muted-foreground text-[0.6875rem] italic">N/A</span>
+                      )}
+                    </TableCell>
+                    <TableCell className="px-3 py-[0.625rem] text-[0.8125rem] whitespace-nowrap">
+                      {store.lastUpdateDate}
+                    </TableCell>
+                  </TableRow>
+                ))
+              )}
+            </TableBody>
+          </Table>
+        </div>
       </div>
     </div>
   );

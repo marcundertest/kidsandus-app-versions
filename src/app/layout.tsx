@@ -10,6 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Kids&Us Apps Versions',
   description: 'Dashboard for monitoring Kids&Us mobile and desktop apps versions across stores.',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   icons: {
     icon: [
       {
