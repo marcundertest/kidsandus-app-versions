@@ -16,15 +16,25 @@ export function UpdateControl({ lastUpdate, onUpdate, isUpdating }: UpdateContro
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    let interval: NodeJS.Timeout;
+
     if (isUpdating) {
-      setProgress((prev) => (prev === 0 ? 10 : prev));
-      const interval = setInterval(() => {
+      // Use a small delay or check to avoid synchronous cascading render warning
+      const timeout = setTimeout(() => {
+        setProgress((prev) => (prev === 0 ? 10 : prev));
+      }, 0);
+
+      interval = setInterval(() => {
         setProgress((prev) => {
           if (prev >= 90) return 90;
           return prev + Math.random() * 10;
         });
       }, 500);
-      return () => clearInterval(interval);
+
+      return () => {
+        clearTimeout(timeout);
+        clearInterval(interval);
+      };
     } else if (progress > 0) {
       setProgress(100);
       const timer = setTimeout(() => setProgress(0), 1000);
