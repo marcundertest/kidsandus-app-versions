@@ -174,10 +174,10 @@ function TableSkeleton() {
   return (
     <div className="space-y-4">
       {/* Mobile Skeleton */}
-      <div className="grid grid-cols-1 gap-4 md:hidden">
+      <div className="space-y-4 lg:hidden">
         {Array.from({ length: 4 }).map((_, i) => (
-          <Card key={i} className="overflow-hidden shadow-sm">
-            <div className="flex items-center gap-3 border-b px-4 py-3">
+          <Card key={i} className="border-muted overflow-hidden shadow-sm">
+            <div className="bg-muted/20 flex items-center gap-3 border-b px-4 py-3">
               <Skeleton className="h-8 w-8 rounded-md" />
               <Skeleton className="h-4 w-32" />
             </div>
@@ -200,38 +200,40 @@ function TableSkeleton() {
       </div>
 
       {/* Desktop Table Skeleton */}
-      <div className="bg-card hidden overflow-hidden rounded-md border md:block">
-        <Table>
-          <TableHeader className="bg-muted">
-            <TableRow className="hover:bg-transparent">
-              <TableHead className="text-left text-[0.75rem] font-semibold">Application</TableHead>
-              <TableHead className="text-left text-[0.75rem] font-semibold">Store</TableHead>
-              <TableHead className="text-left text-[0.75rem] font-semibold">Version</TableHead>
-              <TableHead className="text-left text-[0.75rem] font-semibold">Last Update</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {Array.from({ length: 8 }).map((_, i) => (
-              <TableRow key={i}>
-                <TableCell className="px-3 py-[0.625rem]">
-                  <div className="flex items-center gap-2">
-                    <Skeleton className="h-6 w-6 rounded-sm" />
-                    <Skeleton className="h-4 w-32" />
-                  </div>
-                </TableCell>
-                <TableCell className="px-3 py-[0.625rem]">
-                  <Skeleton className="h-4 w-20" />
-                </TableCell>
-                <TableCell className="px-3 py-[0.625rem]">
-                  <Skeleton className="h-5 w-12 rounded-full" />
-                </TableCell>
-                <TableCell className="px-3 py-[0.625rem]">
-                  <Skeleton className="h-4 w-16" />
-                </TableCell>
+      <div className="hidden lg:block">
+        <div className="bg-card overflow-hidden rounded-md border shadow-sm">
+          <Table>
+            <TableHeader className="bg-muted/50">
+              <TableRow className="hover:bg-transparent">
+                <TableHead className="w-[300px]">Application</TableHead>
+                <TableHead className="w-[180px]">Store</TableHead>
+                <TableHead className="w-[120px]">Version</TableHead>
+                <TableHead>Last Update</TableHead>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+            </TableHeader>
+            <TableBody>
+              {Array.from({ length: 8 }).map((_, i) => (
+                <TableRow key={i}>
+                  <TableCell className="border-r px-4 py-4">
+                    <div className="flex items-center gap-2">
+                      <Skeleton className="h-6 w-6 rounded-sm" />
+                      <Skeleton className="h-4 w-32" />
+                    </div>
+                  </TableCell>
+                  <TableCell className="px-4 py-4">
+                    <Skeleton className="h-4 w-20" />
+                  </TableCell>
+                  <TableCell className="px-4 py-4">
+                    <Skeleton className="h-5 w-12 rounded-full" />
+                  </TableCell>
+                  <TableCell className="px-4 py-4">
+                    <Skeleton className="h-4 w-16" />
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
       </div>
     </div>
   );
