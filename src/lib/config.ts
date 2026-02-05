@@ -3,7 +3,7 @@ import { AppConfig } from './types';
 export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'mykids',
-    name: 'MyKids - Kids&Us',
+    name: 'MyKids',
     orderId: 1,
     stores: [
       {
@@ -41,7 +41,7 @@ export const APPS_CONFIG: AppConfig[] = [
   },
   {
     id: 'ppbb',
-    name: 'P&P and B&B by Kids&Us',
+    name: 'P&P & B&B',
     orderId: 3,
     stores: [
       {
@@ -78,7 +78,7 @@ export const APPS_CONFIG: AppConfig[] = [
   },
   {
     id: 'animal-planet',
-    name: 'Animal Planet by Kids&Us',
+    name: 'Animal Planet',
     orderId: 4,
     stores: [
       {
@@ -115,7 +115,7 @@ export const APPS_CONFIG: AppConfig[] = [
   },
   {
     id: 'fairy-tales',
-    name: 'Fairy Tales by Kids&Us',
+    name: 'Fairy Tales',
     orderId: 5,
     stores: [
       {

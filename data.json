@@ -1,9 +1,9 @@
 {
-  "lastUpdate": "2026-02-05T18:07:58.888Z",
+  "lastUpdate": "2026-02-05T22:37:16.174Z",
   "apps": [
     {
       "id": "mykids",
-      "name": "MyKids - Kids&Us",
+      "name": "MyKids",
       "orderId": 1,
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/ec/df/aeecdf24-bc35-0153-f664-8a2649b9dc04/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
@@ -47,7 +47,7 @@
     },
     {
       "id": "ppbb",
-      "name": "P&P and B&B by Kids&Us",
+      "name": "P&P & B&B",
       "orderId": 3,
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a3/fb/b7/a3fbb720-69ed-dbd9-9bf5-8f290b7b6e03/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
@@ -90,7 +90,7 @@
     },
     {
       "id": "animal-planet",
-      "name": "Animal Planet by Kids&Us",
+      "name": "Animal Planet",
       "orderId": 4,
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/57/8e/98578e5e-5db2-4ed7-8fa4-016bac90f63f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
@@ -133,7 +133,7 @@
     },
     {
       "id": "fairy-tales",
-      "name": "Fairy Tales by Kids&Us",
+      "name": "Fairy Tales",
       "orderId": 5,
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/d8/86/1bd886a8-9cfe-0940-f0c8-e3127eeab865/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
