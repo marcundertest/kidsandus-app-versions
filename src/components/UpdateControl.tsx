@@ -19,7 +19,6 @@ export function UpdateControl({ lastUpdate, onUpdate, isUpdating }: UpdateContro
     let interval: NodeJS.Timeout;
 
     if (isUpdating) {
-      // Use a small delay or check to avoid synchronous cascading render warning
       const timeout = setTimeout(() => {
         setProgress((prev) => (prev === 0 ? 10 : prev));
       }, 0);
@@ -52,7 +51,7 @@ export function UpdateControl({ lastUpdate, onUpdate, isUpdating }: UpdateContro
       const last = new Date(lastUpdate).getTime();
       const now = new Date().getTime();
       const diffMinutes = (now - last) / (1000 * 60);
-      const remaining = Math.max(0, 60 - Math.floor(diffMinutes));
+      const remaining = Math.max(0, Math.ceil(60 - diffMinutes));
       setCooldownRemaining(remaining);
     };
 
@@ -84,7 +83,7 @@ export function UpdateControl({ lastUpdate, onUpdate, isUpdating }: UpdateContro
         </Button>
         <span className="text-muted-foreground text-[13px] whitespace-nowrap">
           Last update: {lastUpdate ? formatLastUpdate(lastUpdate) : 'Never'}
-          {cooldownRemaining > 0 && ` (${cooldownRemaining}m)`}
+          {cooldownRemaining > 0 && ` (${cooldownRemaining}m left)`}
         </span>
       </div>
 
