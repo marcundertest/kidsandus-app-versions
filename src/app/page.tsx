@@ -53,10 +53,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container mx-auto max-w-[1400px] px-4 py-6">
+    <div className="container mx-auto max-w-5xl px-4 py-6">
       <header className="mb-6 border-b pb-6">
         <div className="mb-4 flex items-center justify-between">
-          <h1 className="text-xl font-semibold tracking-tight uppercase">Kids&Us Apps Versions</h1>
+          <h1 className="text-xl font-semibold tracking-tight">Kids&Us Apps Versions</h1>
           <ThemeToggle />
         </div>
 

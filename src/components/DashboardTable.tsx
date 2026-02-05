@@ -25,7 +25,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
   return (
     <div className="space-y-4">
       {/* Mobile Card View (shown below lg breakpoint) */}
-      <div className="space-y-4 lg:hidden">
+      <div className="space-y-4 md:hidden">
         {apps.map((app) => (
           <Card key={app.id} className="border-muted overflow-hidden shadow-sm">
             <CardHeader className="bg-muted/30 flex-row items-center gap-3 space-y-0 px-4 py-3">
@@ -44,7 +44,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                   {app.name.charAt(0)}
                 </div>
               )}
-              <CardTitle className="text-sm leading-none font-bold tracking-tight">
+              <CardTitle className="text-base leading-none font-bold tracking-tight md:text-sm">
                 {app.name}
               </CardTitle>
             </CardHeader>
@@ -56,22 +56,24 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                       href={store.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary truncate text-[13px] font-medium hover:underline"
+                      className="text-primary truncate text-[15px] font-medium hover:underline md:text-[13px]"
                     >
                       {store.name}
                     </a>
                     {store.version !== 'N/A' ? (
                       <Badge
                         variant="secondary"
-                        className="shrink-0 rounded-full px-2 py-0.5 font-mono text-[10px]"
+                        className="shrink-0 rounded-full px-2 py-0.5 font-mono text-[12px] md:text-[10px]"
                       >
                         {store.version}
                       </Badge>
                     ) : (
-                      <span className="text-muted-foreground shrink-0 text-[10px] italic">N/A</span>
+                      <span className="text-muted-foreground shrink-0 text-[12px] italic md:text-[10px]">
+                        N/A
+                      </span>
                     )}
                   </div>
-                  <div className="text-muted-foreground flex items-center justify-between text-[11px]">
+                  <div className="text-muted-foreground flex items-center justify-between text-[13px] md:text-[11px]">
                     <span>Last Update:</span>
                     <span className="font-medium">{store.lastUpdateDate}</span>
                   </div>
@@ -83,12 +85,12 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
       </div>
 
       {/* Desktop Table View */}
-      <div className="bg-card hidden overflow-hidden overflow-x-auto rounded-md border lg:block">
+      <div className="bg-card hidden overflow-hidden overflow-x-auto rounded-md border md:block">
         <div className="inline-block min-w-full align-middle">
           <Table>
             <TableHeader className="bg-muted">
               <TableRow className="hover:bg-transparent">
-                <TableHead className="text-foreground h-10 w-[300px] px-3 py-2 text-[0.75rem] font-semibold">
+                <TableHead className="text-foreground h-10 w-75 px-3 py-2 text-[0.75rem] font-semibold">
                   Application
                 </TableHead>
                 <TableHead className="text-foreground h-10 px-3 py-2 text-[0.75rem] font-semibold">
@@ -110,10 +112,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                     className="hover:bg-muted/50 border-b transition-colors last:border-0"
                   >
                     {index === 0 && (
-                      <TableCell
-                        rowSpan={app.stores.length}
-                        className="px-3 py-[0.625rem] align-top"
-                      >
+                      <TableCell rowSpan={app.stores.length} className="px-3 py-2.5 align-top">
                         <div className="flex items-start gap-2">
                           {app.icon ? (
                             <Image
@@ -134,7 +133,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                         </div>
                       </TableCell>
                     )}
-                    <TableCell className="px-3 py-[0.625rem]">
+                    <TableCell className="px-3 py-2.5">
                       <a
                         href={store.url}
                         target="_blank"
@@ -144,7 +143,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                         {store.name}
                       </a>
                     </TableCell>
-                    <TableCell className="px-3 py-[0.625rem]">
+                    <TableCell className="px-3 py-2.5">
                       {store.version !== 'N/A' ? (
                         <Badge
                           variant="secondary"
@@ -156,7 +155,7 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
                         <span className="text-muted-foreground text-[0.6875rem] italic">N/A</span>
                       )}
                     </TableCell>
-                    <TableCell className="px-3 py-[0.625rem] text-[0.8125rem] whitespace-nowrap">
+                    <TableCell className="px-3 py-2.5 text-[0.8125rem] whitespace-nowrap">
                       {store.lastUpdateDate}
                     </TableCell>
                   </TableRow>
@@ -205,9 +204,9 @@ function TableSkeleton() {
           <Table>
             <TableHeader className="bg-muted/50">
               <TableRow className="hover:bg-transparent">
-                <TableHead className="w-[300px]">Application</TableHead>
-                <TableHead className="w-[180px]">Store</TableHead>
-                <TableHead className="w-[120px]">Version</TableHead>
+                <TableHead className="w-75">Application</TableHead>
+                <TableHead className="w-45">Store</TableHead>
+                <TableHead className="w-30">Version</TableHead>
                 <TableHead>Last Update</TableHead>
               </TableRow>
             </TableHeader>
