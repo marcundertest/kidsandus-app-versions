@@ -30,11 +30,17 @@ export default function Home() {
     }
   };
 
-  const handleUpdate = async () => {
+  const handleUpdate = async (adminKey?: string) => {
     setIsUpdating(true);
     setError(null);
     try {
-      const response = await fetch('/api/update', { method: 'POST' });
+      const headers: HeadersInit = { 'Content-Type': 'application/json' };
+      if (adminKey) headers['x-admin-key'] = adminKey;
+
+      const response = await fetch('/api/update', {
+        method: 'POST',
+        headers,
+      });
       const result = await response.json();
 
       if (!response.ok) {
@@ -91,7 +97,7 @@ export default function Home() {
                     <td className="text-muted-foreground px-4 py-12 text-center text-[0.8125rem]">
                       <div>
                         Please click{' '}
-                        <span onClick={handleUpdate} className="cursor-pointer underline">
+                        <span onClick={() => handleUpdate()} className="cursor-pointer underline">
                           here
                         </span>{' '}
                         to generate the data.

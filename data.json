@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-02-05T22:37:16.174Z",
+  "lastUpdate": "2026-02-05T23:43:02.650Z",
   "apps": [
     {
       "id": "mykids",
@@ -47,7 +47,7 @@
     },
     {
       "id": "ppbb",
-      "name": "P&P & B&B",
+      "name": "P&P and B&B",
       "orderId": 3,
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a3/fb/b7/a3fbb720-69ed-dbd9-9bf5-8f290b7b6e03/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [

@@ -26,6 +26,14 @@ This repository hosts a modern web application built with Next.js and React, des
 - **Local Data API:** Exposes a basic Next.js API route (`/api`) to programmatically access the application version data.
 - **Modern UI Components:** Built with Shadcn/ui, offering a collection of accessible and customizable UI components for a polished user interface.
 
+## 🥷 Admin Features (Secret)
+
+For administrators, there is a hidden method to bypass the update cooldown:
+
+1. **Trigger:** Press the `.` (dot) key anywhere on the page (when not typing in a text box).
+2. **Prompt:** A dialog will appear asking for the Admin Key.
+3. **Action:** Enter the secret key (default: `force`) to force an immediate data refresh, ignoring the 60-minute rate limit.
+
 ## 🖥️ Screenshots
 
 ![Desktop Screenshot](public/assets/screenshot-desktop.png)

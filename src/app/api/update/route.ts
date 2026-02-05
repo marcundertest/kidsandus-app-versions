@@ -5,11 +5,15 @@ import { APPS_CONFIG } from '@/lib/config';
 
 const COOLDOWN_MINUTES = 60;
 
-export async function POST() {
+export async function POST(request: Request) {
   try {
     const currentData = await readData<{ lastUpdate?: string }>(); // Replace explicit try-catch read
 
-    if (currentData?.lastUpdate) {
+    const ADMIN_SECRET = 'force';
+    const adminKey = typeof request !== 'undefined' ? request.headers.get('x-admin-key') : null;
+    const isForceUpdate = adminKey === ADMIN_SECRET;
+
+    if (currentData?.lastUpdate && !isForceUpdate) {
       const lastUpdate = new Date(currentData.lastUpdate);
       const diff = (new Date().getTime() - lastUpdate.getTime()) / (1000 * 60);
 
