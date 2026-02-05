@@ -148,7 +148,7 @@ export function UpdateControl({ lastUpdate, onUpdate, isUpdating, isLoading }: U
       </div>
 
       <Dialog open={showAdminDialog} onOpenChange={setShowAdminDialog}>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-106.25">
           <DialogHeader>
             <DialogTitle>Admin Force Update</DialogTitle>
             <DialogDescription>

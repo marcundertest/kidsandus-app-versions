@@ -7,7 +7,7 @@ const COOLDOWN_MINUTES = 60;
 
 export async function POST(request: Request) {
   try {
-    const currentData = await readData<{ lastUpdate?: string }>(); // Replace explicit try-catch read
+    const currentData = await readData<{ lastUpdate?: string }>();
 
     const ADMIN_SECRET = 'force';
     const adminKey = typeof request !== 'undefined' ? request.headers.get('x-admin-key') : null;
@@ -35,7 +35,6 @@ export async function POST(request: Request) {
       await writeData(newData);
     } catch (writeError) {
       console.error('Persistence failed:', writeError);
-      // We still return success as the scrape worked, just persistence failed
     }
 
     return NextResponse.json({

@@ -27,7 +27,7 @@ export class GithubStorage {
     this.config = {
       owner: owner || '',
       repo: repo || '',
-      path: 'data.json', // Default path, can be made configurable if needed
+      path: 'data.json',
       token: token || '',
     };
   }
@@ -39,7 +39,7 @@ export class GithubStorage {
         repo: this.config.repo,
         path: this.config.path,
         headers: {
-          'If-None-Match': '', // Disable caching
+          'If-None-Match': '',
         },
       });
 
@@ -68,7 +68,6 @@ export class GithubStorage {
 
     while (currentRetry < retries) {
       try {
-        // 1. Get current SHA (required for update)
         let sha: string | undefined;
         try {
           const { data: currentFile } = await this.octokit.rest.repos.getContent({
@@ -76,7 +75,7 @@ export class GithubStorage {
             repo: this.config.repo,
             path: this.config.path,
             headers: {
-              'If-None-Match': '', // Disable caching to ensure we get the latest SHA
+              'If-None-Match': '',
             },
           });
 
@@ -89,7 +88,6 @@ export class GithubStorage {
           // If 404, it means file doesn't exist, so we create it (sha not needed)
         }
 
-        // 2. Commit the new content
         const contentString = JSON.stringify(content, null, 2);
         const contentBase64 = Buffer.from(contentString).toString('base64');
 

@@ -25,7 +25,6 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
 
   return (
     <div className="space-y-4">
-      {/* Mobile Card View (shown below lg breakpoint) */}
       <div className="space-y-4 md:hidden">
         {apps.map((app) => (
           <Card key={app.id} className="border-muted overflow-hidden shadow-sm">
@@ -84,7 +83,6 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
         ))}
       </div>
 
-      {/* Desktop Table View */}
       <div className="bg-card hidden overflow-hidden overflow-x-auto rounded-md border md:block">
         <div className="inline-block min-w-full align-middle">
           <Table>
@@ -171,7 +169,6 @@ export function DashboardTable({ apps, isLoading }: DashboardTableProps) {
 function TableSkeleton() {
   return (
     <div className="space-y-4">
-      {/* Mobile Skeleton */}
       <div className="space-y-4 md:hidden">
         {Array.from({ length: 4 }).map((_, i) => (
           <Card key={i} className="border-muted overflow-hidden shadow-sm">
@@ -197,7 +194,6 @@ function TableSkeleton() {
         ))}
       </div>
 
-      {/* Desktop Table Skeleton */}
       <div className="hidden md:block">
         <div className="bg-card overflow-hidden rounded-md border shadow-sm">
           <Table>

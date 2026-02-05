@@ -7,7 +7,6 @@ export class HuaweiScraper implements IScraper {
 
     const identityId = this.generateIdentityId();
 
-    // Step 1: Get Interface-Code (JWT) base
     const codeUrl = 'https://web-dre.hispace.dbankcloud.com/edge/webedge/getInterfaceCode';
     const codeResponse = await fetch(codeUrl, {
       method: 'POST',
@@ -23,16 +22,13 @@ export class HuaweiScraper implements IScraper {
 
     if (!codeResponse.ok) throw new Error(`Failed to get interface code: ${codeResponse.status}`);
 
-    // The response is a JSON string containing the JWT
     const jwtBase = await codeResponse.json();
     if (typeof jwtBase !== 'string') {
       throw new Error('Invalid Interface-Code response format');
     }
 
-    // Append timestamp suffix as required by Huawei API
     const interfaceCode = `${jwtBase}_${Date.now()}`;
 
-    // Step 2: Get App Details
     const apiUrl = `https://web-dre.hispace.dbankcloud.com/edge/uowap/index?method=internal.getTabDetail&serviceType=20&reqPageNum=1&maxResults=25&uri=app%7C${appId}&appid=${appId}&zone=&locale=es_ES`;
 
     const response = await fetch(apiUrl, {
