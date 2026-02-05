@@ -17,7 +17,7 @@ export function UpdateControl({ lastUpdate, onUpdate, isUpdating }: UpdateContro
 
   useEffect(() => {
     if (isUpdating) {
-      setProgress(10);
+      setProgress((prev) => (prev === 0 ? 10 : prev));
       const interval = setInterval(() => {
         setProgress((prev) => {
           if (prev >= 90) return 90;
@@ -30,7 +30,7 @@ export function UpdateControl({ lastUpdate, onUpdate, isUpdating }: UpdateContro
       const timer = setTimeout(() => setProgress(0), 1000);
       return () => clearTimeout(timer);
     }
-  }, [isUpdating]);
+  }, [isUpdating, progress]);
 
   useEffect(() => {
     if (!lastUpdate) return;
@@ -60,16 +60,16 @@ export function UpdateControl({ lastUpdate, onUpdate, isUpdating }: UpdateContro
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center gap-3">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <Button
           onClick={onUpdate}
           disabled={isUpdating || cooldownRemaining > 0}
           size="sm"
-          className="h-8 px-4"
+          className="h-8 w-full px-4 sm:w-auto"
         >
           {isUpdating ? 'Updating...' : 'Update Data'}
         </Button>
-        <span className="text-muted-foreground text-[13px]">
+        <span className="text-muted-foreground text-center text-[13px] sm:text-left">
           Last update: {lastUpdate ? formatLastUpdate(lastUpdate) : 'Never'}
           {cooldownRemaining > 0 && ` (Cooldown: ${cooldownRemaining}m)`}
         </span>
