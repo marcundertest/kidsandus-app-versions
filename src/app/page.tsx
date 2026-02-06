@@ -33,10 +33,16 @@ export default function Home() {
 
   const handleUpdate = async (adminKey?: string) => {
     const isAdminAttempt = typeof adminKey !== 'undefined';
+    let progressTimer: NodeJS.Timeout | undefined;
 
-    // Only show global progress if it's a normal user update.
+    // Normal User: Instant feedback
     if (!isAdminAttempt) {
       setIsUpdating(true);
+    } else {
+      // Admin User: Delayed feedback to avoid flicker on 401
+      progressTimer = setTimeout(() => {
+        setIsUpdating(true);
+      }, 500);
     }
 
     const toastId = toast.loading(
@@ -64,9 +70,9 @@ export default function Home() {
       const message = err instanceof Error ? err.message : 'Update failed';
       toast.error(message, { id: toastId });
     } finally {
-      if (!isAdminAttempt) {
-        setIsUpdating(false);
-      }
+      // Cleanup: Clear timer if it hasn't fired yet (short request)
+      if (progressTimer) clearTimeout(progressTimer);
+      setIsUpdating(false);
     }
   };
 
