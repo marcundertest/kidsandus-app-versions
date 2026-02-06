@@ -6,12 +6,12 @@ import { Footer } from '@/components/Footer';
 import { DashboardTable } from '@/components/DashboardTable';
 import { UpdateControl } from '@/components/UpdateControl';
 import { DashboardData } from '@/lib/types';
+import { toast } from 'sonner';
 
 export default function Home() {
   const [data, setData] = useState<DashboardData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isUpdating, setIsUpdating] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   const loadData = async () => {
     try {
@@ -24,7 +24,8 @@ export default function Home() {
       const json = await response.json();
       setData(json);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load data');
+      console.error(err);
+      // Silent error on initial load unless critical
     } finally {
       setIsLoading(false);
     }
@@ -32,7 +33,8 @@ export default function Home() {
 
   const handleUpdate = async (adminKey?: string) => {
     setIsUpdating(true);
-    setError(null);
+    const toastId = toast.loading('Updating data...');
+
     try {
       const headers: HeadersInit = { 'Content-Type': 'application/json' };
       if (adminKey) headers['x-admin-key'] = adminKey;
@@ -48,8 +50,10 @@ export default function Home() {
       }
 
       setData(result.data);
+      toast.success('Data updated successfully', { id: toastId });
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Update failed');
+      const message = err instanceof Error ? err.message : 'Update failed';
+      toast.error(message, { id: toastId });
     } finally {
       setIsUpdating(false);
     }
@@ -82,11 +86,6 @@ export default function Home() {
               isUpdating={isUpdating}
               isLoading={isLoading}
             />
-            {error && (
-              <p className="text-destructive animate-in fade-in mt-2 text-xs duration-300">
-                Error: {error}
-              </p>
-            )}
           </div>
 
           {!isLoading && !data ? (

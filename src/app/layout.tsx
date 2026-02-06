@@ -62,6 +62,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Toaster } from '@/components/ui/sonner';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -71,6 +73,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans`} suppressHydrationWarning>
         {children}
+        <Toaster />
       </body>
     </html>
   );
