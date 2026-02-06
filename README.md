@@ -61,6 +61,9 @@ For administrators, there is a hidden method to bypass the update cooldown:
 
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Prettier-F7BA3E?style=for-the-badge&logo=prettier&logoColor=white)
+![Husky](https://img.shields.io/badge/Husky-brown?style=for-the-badge&logo=git&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-729B1B?style=for-the-badge&logo=vitest&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
 
 **Deployment:**
 
@@ -156,20 +159,55 @@ kidsandus-app-versions/
 
 ### Available Scripts
 
-| Command         | Description                                        |
-| --------------- | -------------------------------------------------- |
-| `npm run dev`   | Starts the development server                      |
-| `npm run build` | Compiles the application for production deployment |
-| `npm run start` | Starts the production server                       |
-| `npm run lint`  | Runs ESLint to check for code quality issues       |
+| Command           | Description                                        |
+| ----------------- | -------------------------------------------------- |
+| `npm run dev`     | Starts the development server                      |
+| `npm run build`   | Compiles the application for production deployment |
+| `npm run start`   | Starts the production server                       |
+| `npm run lint`    | Runs ESLint to check for code quality issues       |
+| `npm test`        | Runs the test suite with Vitest                    |
+| `npm run prepare` | Installs Husky git hooks                           |
 
 ### Development Workflow
 
 The standard Next.js development workflow is followed:
 
-1. Make changes to the source code in `src/`.
-2. The development server (started with `npm run dev`) will automatically reload with changes.
-3. Ensure code adheres to ESLint and Prettier standards by running `npm run lint`.
+1. The development server (started with `npm run dev`) will automatically reload with changes.
+2. Ensure code adheres to ESLint and Prettier standards by running `npm run lint`.
+
+### 🛡️ Quality Assurance & Workflows
+
+This project enforces high code quality standards using a robust toolchain:
+
+#### Testing (Vitest)
+
+Unit tests cover critical business logic, specifically the scrapers and utility functions.
+
+```bash
+npm test
+```
+
+- **Mocking:** Network requests (`fetch`, `Octokit`) are mocked to ensure tests are fast and deterministic.
+- **Coverage:** Tests validate success paths, error handling (404/500), and schema validation failures.
+
+#### Data Validation (Zod)
+
+External data from App Stores (Microsoft, iTunes, Huawei) is properly validated at runtime using **Zod schemas**. This ensures that the application never crashes due to unexpected API changes, throwing controlled errors instead.
+
+#### Git Hooks (Husky)
+
+We use Husky to run checks **before** every commit (`pre-commit`) and **during** the commit message creation (`commit-msg`):
+
+1. **Pre-commit:**
+   - **Linting:** Runs `npm run lint`.
+   - **Formatting:** Runs PRETTIER to auto-format staged files.
+   - **Testing:** Runs `npx vitest run` to ensure no regression.
+   - _If any of these fail, the commit is blocked._
+
+2. **Commit Message (Commitlint):**
+   - Enforces [Conventional Commits](https://www.conventionalcommits.org/).
+   - Format: `type: subject` (e.g., `feat: add new scraper`, `fix: update logic`).
+   - _Commits with invalid messages will be rejected._
 
 ## 🚀 Deployment
 
