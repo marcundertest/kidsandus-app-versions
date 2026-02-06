@@ -11,6 +11,11 @@ export async function POST(request: Request) {
 
     const ADMIN_SECRET = 'force';
     const adminKey = typeof request !== 'undefined' ? request.headers.get('x-admin-key') : null;
+
+    // Strict check: If header exists (even empty) but is wrong, deny immediately
+    if (adminKey !== null && adminKey !== ADMIN_SECRET) {
+      return NextResponse.json({ success: false, error: 'Invalid Admin Key' }, { status: 401 });
+    }
     const isForceUpdate = adminKey === ADMIN_SECRET;
 
     if (currentData?.lastUpdate && !isForceUpdate) {

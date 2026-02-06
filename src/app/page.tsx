@@ -32,12 +32,21 @@ export default function Home() {
   };
 
   const handleUpdate = async (adminKey?: string) => {
-    setIsUpdating(true);
-    const toastId = toast.loading('Updating data...');
+    const isAdminAttempt = typeof adminKey !== 'undefined';
+
+    // Only show global progress if it's a normal user update.
+    if (!isAdminAttempt) {
+      setIsUpdating(true);
+    }
+
+    const toastId = toast.loading(
+      isAdminAttempt ? 'Verifying admin access...' : 'Updating data...'
+    );
 
     try {
       const headers: HeadersInit = { 'Content-Type': 'application/json' };
-      if (adminKey) headers['x-admin-key'] = adminKey;
+      // Send the header if it's an admin attempt (even if empty string)
+      if (isAdminAttempt) headers['x-admin-key'] = adminKey;
 
       const response = await fetch('/api/update', {
         method: 'POST',
@@ -55,7 +64,9 @@ export default function Home() {
       const message = err instanceof Error ? err.message : 'Update failed';
       toast.error(message, { id: toastId });
     } finally {
-      setIsUpdating(false);
+      if (!isAdminAttempt) {
+        setIsUpdating(false);
+      }
     }
   };
 
