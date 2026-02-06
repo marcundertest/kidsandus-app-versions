@@ -1,7 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { GithubStorage } from '@/lib/utils/github-storage';
 
-// Mock Octokit class
 const mockGetContent = vi.fn();
 const mockCreateOrUpdate = vi.fn();
 
@@ -20,7 +19,6 @@ vi.mock('octokit', () => {
   };
 });
 
-// Mock process.env
 const originalEnv = process.env;
 
 describe('GithubStorage', () => {
@@ -40,7 +38,6 @@ describe('GithubStorage', () => {
     vi.clearAllMocks();
     process.env = originalEnv;
   });
-
   it('fetchData returns parsed JSON on success', async () => {
     const mockContent = JSON.stringify({ key: 'value' });
     const mockBase64 = Buffer.from(mockContent).toString('base64');
