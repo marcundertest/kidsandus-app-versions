@@ -78,15 +78,17 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="bg-background/95 supports-filter:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur-md">
-        <div className="container mx-auto flex max-w-5xl items-center justify-between px-4 py-2 md:py-3">
-          <div
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="cursor-pointer transition-opacity hover:opacity-80"
-          >
-            <h1 className="text-xl font-semibold tracking-tight">Kids&Us App Versions</h1>
+      <header className="bg-background/95 supports-filter:bg-background/60 sticky top-0 z-50 w-full backdrop-blur-md">
+        <div className="container mx-auto max-w-5xl px-4">
+          <div className="flex items-center justify-between border-b py-2 md:py-3">
+            <div
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="cursor-pointer transition-opacity hover:opacity-80"
+            >
+              <h1 className="text-xl font-semibold tracking-tight">Kids&Us App Versions</h1>
+            </div>
+            <ThemeToggle />
           </div>
-          <ThemeToggle />
         </div>
       </header>
 
