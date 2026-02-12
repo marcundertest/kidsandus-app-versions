@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-02-06T11:53:56.831Z",
+  "lastUpdate": "2026-02-12T09:15:55.697Z",
   "apps": [
     {
       "id": "mykids",
@@ -10,8 +10,8 @@
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.3.7",
-          "lastUpdateDate": "16/12/2025",
+          "version": "1.3.9",
+          "lastUpdateDate": "10/02/2026",
           "url": "https://play.google.com/store/apps/details?id=es.kidsandus.mykids"
         },
         {
