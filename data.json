@@ -1,11 +1,11 @@
 {
-  "lastUpdate": "2026-02-12T09:15:55.697Z",
+  "lastUpdate": "2026-02-19T10:42:18.915Z",
   "apps": [
     {
       "id": "mykids",
       "name": "MyKids",
       "orderId": 1,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/ec/df/aeecdf24-bc35-0153-f664-8a2649b9dc04/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5a/c1/31/5ac13148-179b-4340-a5c5-81ccb86b9686/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
@@ -17,8 +17,8 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.3.7",
-          "lastUpdateDate": "22/12/2025",
+          "version": "1.3.9",
+          "lastUpdateDate": "12/02/2026",
           "url": "https://apps.apple.com/app/id1435773819"
         }
       ]
