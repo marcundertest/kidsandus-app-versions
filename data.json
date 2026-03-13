@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-02-19T10:42:18.915Z",
+  "lastUpdate": "2026-03-13T15:57:12.537Z",
   "apps": [
     {
       "id": "mykids",
@@ -135,41 +135,41 @@
       "id": "fairy-tales",
       "name": "Fairy Tales",
       "orderId": 5,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/d8/86/1bd886a8-9cfe-0940-f0c8-e3127eeab865/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/66/7c/73/667c7397-af40-072d-0a07-dbc60af64391/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
           "name": "Microsoft Store",
-          "version": "1.0041",
-          "lastUpdateDate": "14/01/2026",
+          "version": "1.0042",
+          "lastUpdateDate": "10/03/2026",
           "url": "https://apps.microsoft.com/detail/xpfpb39dqxd8kl"
         },
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.0041",
-          "lastUpdateDate": "08/01/2026",
+          "version": "1.0042",
+          "lastUpdateDate": "06/03/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway.fairytales.pro"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.1.0",
-          "lastUpdateDate": "12/01/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "09/03/2026",
           "url": "https://apps.apple.com/app/id6745816888"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "1.1.0",
-          "lastUpdateDate": "12/01/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "09/03/2026",
           "url": "https://apps.apple.com/app/id6745816888"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "1.0041",
-          "lastUpdateDate": "12/01/2026",
+          "version": "1.0042",
+          "lastUpdateDate": "09/03/2026",
           "url": "https://appgallery.huawei.com/app/C115098195"
         }
       ]
