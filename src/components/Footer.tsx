@@ -3,7 +3,7 @@ export function Footer() {
 
   return (
     <footer className="w-full">
-      <div className="container mx-auto max-w-5xl px-4">
+      <div className="container mx-auto max-w-225 px-4">
         <div className="flex flex-col items-center justify-between gap-4 border-t py-6 text-center md:flex-row md:py-8 md:text-left">
           <div className="flex flex-col gap-1">
             <p className="text-muted-foreground text-xs leading-none font-medium">
