@@ -1,24 +1,24 @@
 {
-  "lastUpdate": "2026-03-13T15:57:12.537Z",
+  "lastUpdate": "2026-03-26T08:41:13.232Z",
   "apps": [
     {
       "id": "mykids",
       "name": "MyKids",
       "orderId": 1,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5a/c1/31/5ac13148-179b-4340-a5c5-81ccb86b9686/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/4d/ba/a14dbac1-68a1-909c-ced5-b196d09e7b64/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.3.9",
-          "lastUpdateDate": "10/02/2026",
+          "version": "1.3.10",
+          "lastUpdateDate": "10/03/2026",
           "url": "https://play.google.com/store/apps/details?id=es.kidsandus.mykids"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.3.9",
-          "lastUpdateDate": "12/02/2026",
+          "version": "1.3.10",
+          "lastUpdateDate": "17/03/2026",
           "url": "https://apps.apple.com/app/id1435773819"
         }
       ]
@@ -92,7 +92,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3f/d0/bf/3fd0bfa3-4736-e15b-cbc6-bc1835b359a9/PlayerIcon.png/512x512bb.png",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/57/8e/98578e5e-5db2-4ed7-8fa4-016bac90f63f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
