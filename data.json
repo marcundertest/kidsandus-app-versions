@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-03-26T08:41:13.232Z",
+  "lastUpdate": "2026-05-05T08:52:49.949Z",
   "apps": [
     {
       "id": "mykids",
@@ -49,7 +49,7 @@
       "id": "ppbb",
       "name": "P&P and B&B",
       "orderId": 3,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a3/fb/b7/a3fbb720-69ed-dbd9-9bf5-8f290b7b6e03/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b3/ab/d2/b3abd2bd-7393-9804-fc0b-69a97f4f2f36/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
@@ -68,22 +68,22 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.1.2",
-          "lastUpdateDate": "13/01/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "05/05/2026",
           "url": "https://apps.apple.com/app/id6749446790"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "1.1.2",
-          "lastUpdateDate": "13/01/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "05/05/2026",
           "url": "https://apps.apple.com/app/id6749446790"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "1.1.2",
-          "lastUpdateDate": "13/01/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "05/05/2026",
           "url": "https://appgallery.huawei.com/app/C114967515"
         }
       ]
@@ -92,41 +92,41 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/57/8e/98578e5e-5db2-4ed7-8fa4-016bac90f63f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6e/55/ec/6e55ec69-d965-e1b6-d826-4f4cbd03492c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
           "name": "Microsoft Store",
-          "version": "1.1.28",
-          "lastUpdateDate": "30/09/2025",
+          "version": "Unknown",
+          "lastUpdateDate": "20/04/2026",
           "url": "https://apps.microsoft.com/detail/xpdl11h3qshgpb"
         },
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.1.28",
-          "lastUpdateDate": "25/09/2025",
+          "version": "1.1.29",
+          "lastUpdateDate": "16/04/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.1.28",
-          "lastUpdateDate": "02/10/2025",
+          "version": "1.1.29",
+          "lastUpdateDate": "21/04/2026",
           "url": "https://apps.apple.com/app/id6457362370"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "1.1.28",
-          "lastUpdateDate": "13/10/2025",
+          "version": "1.1.29",
+          "lastUpdateDate": "21/04/2026",
           "url": "https://apps.apple.com/app/id6502336967"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "1.1.28",
-          "lastUpdateDate": "03/10/2025",
+          "version": "1.1.29",
+          "lastUpdateDate": "21/04/2026",
           "url": "https://appgallery.huawei.com/app/C112233051"
         }
       ]
