@@ -1,24 +1,24 @@
 {
-  "lastUpdate": "2026-05-05T08:52:49.949Z",
+  "lastUpdate": "2026-05-14T15:38:29.671Z",
   "apps": [
     {
       "id": "mykids",
       "name": "MyKids",
       "orderId": 1,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/4d/ba/a14dbac1-68a1-909c-ced5-b196d09e7b64/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/7e/59/6a7e59cd-6c9b-c45e-13d3-e6d530c34c40/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.3.10",
-          "lastUpdateDate": "10/03/2026",
+          "version": "1.3.12",
+          "lastUpdateDate": "12/05/2026",
           "url": "https://play.google.com/store/apps/details?id=es.kidsandus.mykids"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.3.10",
-          "lastUpdateDate": "17/03/2026",
+          "version": "1.3.11",
+          "lastUpdateDate": "13/05/2026",
           "url": "https://apps.apple.com/app/id1435773819"
         }
       ]
@@ -54,15 +54,15 @@
         {
           "id": "ms-store",
           "name": "Microsoft Store",
-          "version": "1.1.2",
-          "lastUpdateDate": "13/01/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "06/05/2026",
           "url": "https://apps.microsoft.com/detail/xp9m1b7t3zd4lt"
         },
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.1.2",
-          "lastUpdateDate": "09/01/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "04/05/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway.ppbb.pro"
         },
         {
@@ -92,7 +92,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6e/55/ec/6e55ec69-d965-e1b6-d826-4f4cbd03492c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/82/bf/b882bf19-3237-82ac-0d13-f9be0abed836/PlayerIcon.png/512x512bb.png",
       "stores": [
         {
           "id": "ms-store",
@@ -178,20 +178,20 @@
       "id": "tt-homed-in",
       "name": "T&T Homed In",
       "orderId": 6,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/5a/16/305a16f0-e9be-610d-f081-99e0ef69fb73/AppIcon-0-0-1x_U007emarketing-0-11-0-P3-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5e/fe/cd/5efecd82-e3d5-c77d-dfa2-176e08b1dc51/AppIcon-0-0-1x_U007emarketing-0-11-0-P3-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "10.2.9",
-          "lastUpdateDate": "30/09/2025",
+          "version": "11.0.0",
+          "lastUpdateDate": "12/05/2026",
           "url": "https://play.google.com/store/apps/details?id=air.TandTHomedIn"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "10.2.9",
-          "lastUpdateDate": "01/10/2025",
+          "version": "11.0.0",
+          "lastUpdateDate": "12/05/2026",
           "url": "https://apps.apple.com/app/id1087825783"
         }
       ]
