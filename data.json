@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-05-14T15:38:29.671Z",
+  "lastUpdate": "2026-05-19T10:26:51.570Z",
   "apps": [
     {
       "id": "mykids",
@@ -92,7 +92,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/82/bf/b882bf19-3237-82ac-0d13-f9be0abed836/PlayerIcon.png/512x512bb.png",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6e/55/ec/6e55ec69-d965-e1b6-d826-4f4cbd03492c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
