@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-05-19T10:26:51.570Z",
+  "lastUpdate": "2026-05-20T10:08:13.171Z",
   "apps": [
     {
       "id": "mykids",
@@ -97,8 +97,8 @@
         {
           "id": "ms-store",
           "name": "Microsoft Store",
-          "version": "Unknown",
-          "lastUpdateDate": "20/04/2026",
+          "version": "1.1.30",
+          "lastUpdateDate": "20/05/2026",
           "url": "https://apps.microsoft.com/detail/xpdl11h3qshgpb"
         },
         {
