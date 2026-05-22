@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-05-20T10:08:13.171Z",
+  "lastUpdate": "2026-05-22T11:41:36.914Z",
   "apps": [
     {
       "id": "mykids",
@@ -92,7 +92,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6e/55/ec/6e55ec69-d965-e1b6-d826-4f4cbd03492c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/82/bf/b882bf19-3237-82ac-0d13-f9be0abed836/PlayerIcon.png/512x512bb.png",
       "stores": [
         {
           "id": "ms-store",
@@ -104,15 +104,15 @@
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.1.29",
-          "lastUpdateDate": "16/04/2026",
+          "version": "1.1.30",
+          "lastUpdateDate": "15/05/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.1.29",
-          "lastUpdateDate": "21/04/2026",
+          "version": "1.1.30",
+          "lastUpdateDate": "21/05/2026",
           "url": "https://apps.apple.com/app/id6457362370"
         },
         {
@@ -125,8 +125,8 @@
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "1.1.29",
-          "lastUpdateDate": "21/04/2026",
+          "version": "1.1.30",
+          "lastUpdateDate": "21/05/2026",
           "url": "https://appgallery.huawei.com/app/C112233051"
         }
       ]
