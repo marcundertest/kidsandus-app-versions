@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-05T07:13:32.715Z",
+  "lastUpdate": "2026-08-19T17:43:51.912Z",
   "apps": [
     {
       "id": "mykids",
@@ -49,7 +49,7 @@
       "id": "ppbb",
       "name": "P&P and B&B",
       "orderId": 3,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/d2/f9/dcd2f96c-ef68-a435-581b-51aacfb26f9b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9c/f8/08/9cf808fe-88cf-8508-4e58-800caeb92f96/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
@@ -61,29 +61,29 @@
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.2.1",
-          "lastUpdateDate": "29/05/2026",
+          "version": "2.0.0",
+          "lastUpdateDate": "13/08/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway.ppbb.pro"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.2.1",
-          "lastUpdateDate": "01/06/2026",
+          "version": "2.0.0",
+          "lastUpdateDate": "17/08/2026",
           "url": "https://apps.apple.com/app/id6749446790"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "1.2.1",
-          "lastUpdateDate": "01/06/2026",
+          "version": "2.0.0",
+          "lastUpdateDate": "17/08/2026",
           "url": "https://apps.apple.com/app/id6749446790"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "1.2.1",
-          "lastUpdateDate": "04/06/2026",
+          "version": "2.0.0",
+          "lastUpdateDate": "17/08/2026",
           "url": "https://appgallery.huawei.com/app/C114967515"
         }
       ]
@@ -92,7 +92,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/82/bf/b882bf19-3237-82ac-0d13-f9be0abed836/PlayerIcon.png/512x512bb.png",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/8f/42/bd8f42ca-37f4-37f9-214b-ce0d57823695/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
@@ -111,22 +111,22 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.1.30",
-          "lastUpdateDate": "21/05/2026",
+          "version": "2.0.0",
+          "lastUpdateDate": "17/08/2026",
           "url": "https://apps.apple.com/app/id6457362370"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "1.1.29",
-          "lastUpdateDate": "21/04/2026",
+          "version": "2.0.0",
+          "lastUpdateDate": "17/08/2026",
           "url": "https://apps.apple.com/app/id6502336967"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "1.1.30",
-          "lastUpdateDate": "21/05/2026",
+          "version": "2.0.0",
+          "lastUpdateDate": "18/08/2026",
           "url": "https://appgallery.huawei.com/app/C112233051"
         }
       ]
@@ -135,7 +135,7 @@
       "id": "fairy-tales",
       "name": "Fairy Tales",
       "orderId": 5,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/66/7c/73/667c7397-af40-072d-0a07-dbc60af64391/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cc/08/bb/cc08bbc7-c9b0-a1b7-b8d7-549d68e5e65e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
@@ -154,22 +154,22 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.2.0",
-          "lastUpdateDate": "09/03/2026",
+          "version": "2.0.0",
+          "lastUpdateDate": "17/08/2026",
           "url": "https://apps.apple.com/app/id6745816888"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "1.2.0",
-          "lastUpdateDate": "09/03/2026",
+          "version": "2.0.0",
+          "lastUpdateDate": "17/08/2026",
           "url": "https://apps.apple.com/app/id6745816888"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "1.0042",
-          "lastUpdateDate": "09/03/2026",
+          "version": "1.0046",
+          "lastUpdateDate": "19/08/2026",
           "url": "https://appgallery.huawei.com/app/C115098195"
         }
       ]
