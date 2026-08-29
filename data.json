@@ -1,24 +1,24 @@
 {
-  "lastUpdate": "2026-08-19T17:43:51.912Z",
+  "lastUpdate": "2026-08-29T16:46:56.265Z",
   "apps": [
     {
       "id": "mykids",
       "name": "MyKids",
       "orderId": 1,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8b/e3/c3/8be3c39a-19e4-7873-4185-b167078849ad/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/80/b7/1b80b73b-fb97-7f4a-3feb-2afaf022abe2/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.4.1",
-          "lastUpdateDate": "22/07/2026",
+          "version": "1.5.0",
+          "lastUpdateDate": "25/08/2026",
           "url": "https://play.google.com/store/apps/details?id=es.kidsandus.mykids"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.4.1",
-          "lastUpdateDate": "29/07/2026",
+          "version": "1.5.0",
+          "lastUpdateDate": "24/08/2026",
           "url": "https://apps.apple.com/app/id1435773819"
         }
       ]
@@ -92,41 +92,41 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/8f/42/bd8f42ca-37f4-37f9-214b-ce0d57823695/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/38/e6/3238e6ee-5093-eeef-2278-219eeb1f032f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
           "name": "Microsoft Store",
-          "version": "1.1.30",
-          "lastUpdateDate": "20/05/2026",
+          "version": "2.9.4",
+          "lastUpdateDate": "28/08/2026",
           "url": "https://apps.microsoft.com/detail/xpdl11h3qshgpb"
         },
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.1.30",
-          "lastUpdateDate": "15/05/2026",
+          "version": "2.1.0",
+          "lastUpdateDate": "24/08/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "2.0.0",
-          "lastUpdateDate": "17/08/2026",
+          "version": "2.1.0",
+          "lastUpdateDate": "26/08/2026",
           "url": "https://apps.apple.com/app/id6457362370"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "2.0.0",
-          "lastUpdateDate": "17/08/2026",
+          "version": "2.1.0",
+          "lastUpdateDate": "26/08/2026",
           "url": "https://apps.apple.com/app/id6502336967"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "2.0.0",
-          "lastUpdateDate": "18/08/2026",
+          "version": "2.1.0",
+          "lastUpdateDate": "27/08/2026",
           "url": "https://appgallery.huawei.com/app/C112233051"
         }
       ]
@@ -147,8 +147,8 @@
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.0042",
-          "lastUpdateDate": "06/03/2026",
+          "version": "1.0046",
+          "lastUpdateDate": "04/08/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway.fairytales.pro"
         },
         {
