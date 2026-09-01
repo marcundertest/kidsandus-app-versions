@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-01T06:36:57.614Z",
+  "lastUpdate": "2026-09-01T09:37:09.256Z",
   "apps": [
     {
       "id": "mykids",
@@ -10,8 +10,8 @@
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.5.0",
-          "lastUpdateDate": "25/08/2026",
+          "version": "1.5.1",
+          "lastUpdateDate": "31/08/2026",
           "url": "https://play.google.com/store/apps/details?id=es.kidsandus.mykids"
         },
         {
@@ -27,7 +27,7 @@
       "id": "mylocker",
       "name": "MyLocker",
       "orderId": 2,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2e/0c/a1/2e0ca1ae-6066-6bb8-748d-5028cc918b85/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/87/ae/4287aeda-0376-01b4-65af-c7b6417a3d9c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
@@ -39,8 +39,8 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.4.3",
-          "lastUpdateDate": "02/12/2025",
+          "version": "1.4.4",
+          "lastUpdateDate": "31/08/2026",
           "url": "https://apps.apple.com/app/id1258072089"
         }
       ]
