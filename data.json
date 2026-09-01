@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-31T10:04:23.447Z",
+  "lastUpdate": "2026-09-01T06:36:57.614Z",
   "apps": [
     {
       "id": "mykids",
@@ -32,8 +32,8 @@
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.4.3",
-          "lastUpdateDate": "11/11/2025",
+          "version": "1.4.4",
+          "lastUpdateDate": "13/05/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.alumnos"
         },
         {
@@ -92,7 +92,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/38/e6/3238e6ee-5093-eeef-2278-219eeb1f032f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/11/14/e711140e-8129-b48b-3132-e2f1d6f4b99c/PlayerIcon.png/512x512bb.png",
       "stores": [
         {
           "id": "ms-store",
