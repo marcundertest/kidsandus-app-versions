@@ -21,9 +21,28 @@ export const APPS_CONFIG: AppConfig[] = [
     ],
   },
   {
+    id: 'mykids-kute',
+    name: 'MyKids KUTE',
+    orderId: 2,
+    stores: [
+      {
+        id: 'google-play',
+        name: 'Google Play',
+        type: 'google-play',
+        packageId: 'com.kidsandus.mykidskute',
+      },
+      {
+        id: 'app-store-ios',
+        name: 'App Store iOS',
+        type: 'itunes',
+        appId: '6759554484',
+      },
+    ],
+  },
+  {
     id: 'mylocker',
     name: 'MyLocker',
-    orderId: 2,
+    orderId: 3,
     stores: [
       {
         id: 'google-play',
@@ -40,9 +59,28 @@ export const APPS_CONFIG: AppConfig[] = [
     ],
   },
   {
+    id: 'mylocker-kute',
+    name: 'MyLocker KUTE',
+    orderId: 4,
+    stores: [
+      {
+        id: 'google-play',
+        name: 'Google Play',
+        type: 'google-play',
+        packageId: 'com.kidsandus.mylockerkute',
+      },
+      {
+        id: 'app-store-ios',
+        name: 'App Store iOS',
+        type: 'itunes',
+        appId: '6759555326',
+      },
+    ],
+  },
+  {
     id: 'sam-emma',
     name: 'Sam&Emma',
-    orderId: 3,
+    orderId: 5,
     stores: [
       {
         id: 'google-play',
@@ -73,7 +111,7 @@ export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'ppbb',
     name: 'P&P and B&B',
-    orderId: 4,
+    orderId: 6,
     stores: [
       {
         id: 'ms-store',
@@ -110,7 +148,7 @@ export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'animal-planet',
     name: 'Animal Planet',
-    orderId: 5,
+    orderId: 7,
     stores: [
       {
         id: 'ms-store',
@@ -147,7 +185,7 @@ export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'fairy-tales',
     name: 'Fairy Tales',
-    orderId: 6,
+    orderId: 8,
     stores: [
       {
         id: 'ms-store',
@@ -184,7 +222,7 @@ export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'mysteries',
     name: 'Mysteries',
-    orderId: 7,
+    orderId: 9,
     stores: [
       {
         id: 'ms-store',
@@ -221,7 +259,7 @@ export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'tt-homed-in',
     name: 'T&T Homed In',
-    orderId: 8,
+    orderId: 10,
     stores: [
       {
         id: 'google-play',
@@ -240,7 +278,7 @@ export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'grip-2120',
     name: 'GRIP 2120',
-    orderId: 9,
+    orderId: 11,
     stores: [
       {
         id: 'google-play',
