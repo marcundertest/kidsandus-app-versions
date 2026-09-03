@@ -13,23 +13,6 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [isUpdating, setIsUpdating] = useState(false);
 
-  const loadData = async () => {
-    try {
-      const response = await fetch('/api/data');
-      if (response.status === 404) {
-        setIsLoading(false);
-        return;
-      }
-      if (!response.ok) throw new Error('Failed to load data');
-      const json = await response.json();
-      setData(json);
-    } catch (err) {
-      console.error(err);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   const handleUpdate = async (adminKey?: string) => {
     const isAdminAttempt = typeof adminKey !== 'undefined';
     let progressTimer: NodeJS.Timeout | undefined;
@@ -73,6 +56,23 @@ export default function Home() {
   };
 
   useEffect(() => {
+    const loadData = async () => {
+      try {
+        const response = await fetch('/api/data');
+        if (response.status === 404) {
+          setIsLoading(false);
+          return;
+        }
+        if (!response.ok) throw new Error('Failed to load data');
+        const json = await response.json();
+        setData(json);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
     loadData();
   }, []);
 
