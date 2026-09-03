@@ -95,12 +95,6 @@ export const APPS_CONFIG: AppConfig[] = [
         appId: '6768969669',
       },
       {
-        id: 'app-store-macos',
-        name: 'App Store macOS',
-        type: 'itunes',
-        appId: '6768969669',
-      },
-      {
         id: 'appgallery',
         name: 'Huawei AppGallery',
         type: 'huawei',
