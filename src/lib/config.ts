@@ -40,9 +40,40 @@ export const APPS_CONFIG: AppConfig[] = [
     ],
   },
   {
+    id: 'sam-emma',
+    name: 'Sam&Emma',
+    orderId: 3,
+    stores: [
+      {
+        id: 'google-play',
+        name: 'Google Play',
+        type: 'google-play',
+        packageId: 'com.kidsandus.myway.se.pro',
+      },
+      {
+        id: 'app-store-ios',
+        name: 'App Store iOS',
+        type: 'itunes',
+        appId: '6768969669',
+      },
+      {
+        id: 'app-store-macos',
+        name: 'App Store macOS',
+        type: 'itunes',
+        appId: '6768969669',
+      },
+      {
+        id: 'appgallery',
+        name: 'Huawei AppGallery',
+        type: 'huawei',
+        appId: 'C117692333',
+      },
+    ],
+  },
+  {
     id: 'ppbb',
     name: 'P&P and B&B',
-    orderId: 3,
+    orderId: 4,
     stores: [
       {
         id: 'ms-store',
@@ -79,7 +110,7 @@ export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'animal-planet',
     name: 'Animal Planet',
-    orderId: 4,
+    orderId: 5,
     stores: [
       {
         id: 'ms-store',
@@ -116,7 +147,7 @@ export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'fairy-tales',
     name: 'Fairy Tales',
-    orderId: 5,
+    orderId: 6,
     stores: [
       {
         id: 'ms-store',
@@ -151,9 +182,46 @@ export const APPS_CONFIG: AppConfig[] = [
     ],
   },
   {
+    id: 'mysteries',
+    name: 'Mysteries',
+    orderId: 7,
+    stores: [
+      {
+        id: 'ms-store',
+        name: 'Microsoft Store',
+        type: 'microsoft',
+        productId: 'xp8ccn2wn0bm7f',
+      },
+      {
+        id: 'google-play',
+        name: 'Google Play',
+        type: 'google-play',
+        packageId: 'com.kidsandus.myway.my.pro',
+      },
+      {
+        id: 'app-store-ios',
+        name: 'App Store iOS',
+        type: 'itunes',
+        appId: '6756563027',
+      },
+      {
+        id: 'app-store-macos',
+        name: 'App Store macOS',
+        type: 'itunes',
+        appId: '6756563027',
+      },
+      {
+        id: 'appgallery',
+        name: 'Huawei AppGallery',
+        type: 'huawei',
+        appId: 'C116404975',
+      },
+    ],
+  },
+  {
     id: 'tt-homed-in',
     name: 'T&T Homed In',
-    orderId: 6,
+    orderId: 8,
     stores: [
       {
         id: 'google-play',
@@ -172,7 +240,7 @@ export const APPS_CONFIG: AppConfig[] = [
   {
     id: 'grip-2120',
     name: 'GRIP 2120',
-    orderId: 7,
+    orderId: 9,
     stores: [
       {
         id: 'google-play',

@@ -1,11 +1,11 @@
 {
-  "lastUpdate": "2026-09-01T09:37:09.256Z",
+  "lastUpdate": "2026-09-03T07:26:28.956Z",
   "apps": [
     {
       "id": "mykids",
       "name": "MyKids",
       "orderId": 1,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/80/b7/1b80b73b-fb97-7f4a-3feb-2afaf022abe2/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1a/b1/e9/1ab1e9d9-cc77-23a7-5e03-d0fc8c7a032e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
@@ -17,8 +17,8 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.5.0",
-          "lastUpdateDate": "24/08/2026",
+          "version": "1.5.1",
+          "lastUpdateDate": "01/09/2026",
           "url": "https://apps.apple.com/app/id1435773819"
         }
       ]
@@ -46,9 +46,45 @@
       ]
     },
     {
+      "id": "sam-emma",
+      "name": "Sam&Emma",
+      "orderId": 3,
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/e8/b3/36e8b3cd-4cdb-761d-d6cf-5990b60bfeb2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "stores": [
+        {
+          "id": "google-play",
+          "name": "Google Play",
+          "version": "1.1.0",
+          "lastUpdateDate": "26/08/2026",
+          "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway.se.pro"
+        },
+        {
+          "id": "app-store-ios",
+          "name": "App Store iOS",
+          "version": "1.1.0",
+          "lastUpdateDate": "28/08/2026",
+          "url": "https://apps.apple.com/app/id6768969669"
+        },
+        {
+          "id": "app-store-macos",
+          "name": "App Store macOS",
+          "version": "1.1.0",
+          "lastUpdateDate": "28/08/2026",
+          "url": "https://apps.apple.com/app/id6768969669"
+        },
+        {
+          "id": "appgallery",
+          "name": "Huawei AppGallery",
+          "version": "1.1.0",
+          "lastUpdateDate": "01/09/2026",
+          "url": "https://appgallery.huawei.com/app/C117692333"
+        }
+      ]
+    },
+    {
       "id": "ppbb",
       "name": "P&P and B&B",
-      "orderId": 3,
+      "orderId": 4,
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9c/f8/08/9cf808fe-88cf-8508-4e58-800caeb92f96/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
@@ -91,8 +127,8 @@
     {
       "id": "animal-planet",
       "name": "Animal Planet",
-      "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/11/14/e711140e-8129-b48b-3132-e2f1d6f4b99c/PlayerIcon.png/512x512bb.png",
+      "orderId": 5,
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/38/e6/3238e6ee-5093-eeef-2278-219eeb1f032f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
@@ -134,8 +170,8 @@
     {
       "id": "fairy-tales",
       "name": "Fairy Tales",
-      "orderId": 5,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cc/08/bb/cc08bbc7-c9b0-a1b7-b8d7-549d68e5e65e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "orderId": 6,
+      "icon": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHM0OYfiFeMI2p9MWie0CvL99U4GA1gf6_kayTt_kBblFwHwo8BW8JXlqfnYxKPmmBedgVlrU6LvROZ85t9qxh9pM5ZL.wL9zyINpON_XWdkyabVJ9hzyLLlRotXjnkPZyQt6XvDN4_lGSFyJTpHyirU-&format=source",
       "stores": [
         {
           "id": "ms-store",
@@ -175,9 +211,52 @@
       ]
     },
     {
+      "id": "mysteries",
+      "name": "Mysteries",
+      "orderId": 7,
+      "icon": "https://appimg-dre.dbankcdn.com/application/icon144/65/867fffc3b58e4e1f9af57322028758a0.png",
+      "stores": [
+        {
+          "id": "ms-store",
+          "name": "Microsoft Store",
+          "version": "1.5.0",
+          "lastUpdateDate": "01/09/2026",
+          "url": "https://apps.microsoft.com/detail/xp8ccn2wn0bm7f"
+        },
+        {
+          "id": "google-play",
+          "name": "Google Play",
+          "version": "1.5.0",
+          "lastUpdateDate": "27/08/2026",
+          "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway.my.pro"
+        },
+        {
+          "id": "app-store-ios",
+          "name": "App Store iOS",
+          "version": "1.5.0",
+          "lastUpdateDate": "29/08/2026",
+          "url": "https://apps.apple.com/app/id6756563027"
+        },
+        {
+          "id": "app-store-macos",
+          "name": "App Store macOS",
+          "version": "1.5.0",
+          "lastUpdateDate": "29/08/2026",
+          "url": "https://apps.apple.com/app/id6756563027"
+        },
+        {
+          "id": "appgallery",
+          "name": "Huawei AppGallery",
+          "version": "1.5.0",
+          "lastUpdateDate": "28/08/2026",
+          "url": "https://appgallery.huawei.com/app/C116404975"
+        }
+      ]
+    },
+    {
       "id": "tt-homed-in",
       "name": "T&T Homed In",
-      "orderId": 6,
+      "orderId": 8,
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5b/34/99/5b349962-32b0-a39a-c21c-b754e577d969/AppIcon-0-0-1x_U007emarketing-0-11-0-P3-85-220.png/512x512bb.jpg",
       "stores": [
         {
@@ -199,7 +278,7 @@
     {
       "id": "grip-2120",
       "name": "GRIP 2120",
-      "orderId": 7,
+      "orderId": 9,
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ce/0a/96/ce0a962c-d9bd-78e0-3de2-e8d16c2ea388/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
