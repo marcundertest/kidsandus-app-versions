@@ -1,24 +1,24 @@
 {
-  "lastUpdate": "2026-09-03T12:12:33.441Z",
+  "lastUpdate": "2026-09-09T16:03:48.898Z",
   "apps": [
     {
       "id": "mykids",
       "name": "MyKids",
       "orderId": 1,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1a/b1/e9/1ab1e9d9-cc77-23a7-5e03-d0fc8c7a032e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/15/24/d7/1524d7cd-63d8-b5ce-6618-a1de635ba33e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.5.1",
-          "lastUpdateDate": "31/08/2026",
+          "version": "1.5.3",
+          "lastUpdateDate": "04/09/2026",
           "url": "https://play.google.com/store/apps/details?id=es.kidsandus.mykids"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.5.1",
-          "lastUpdateDate": "01/09/2026",
+          "version": "1.5.3",
+          "lastUpdateDate": "08/09/2026",
           "url": "https://apps.apple.com/app/id1435773819"
         }
       ]
@@ -27,20 +27,20 @@
       "id": "mykids-kute",
       "name": "MyKids KUTE",
       "orderId": 2,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/49/5d/ce495d8f-c41e-779b-f369-de7b4ebe26bf/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3f/47/cd/3f47cdd3-aef8-d67f-44ae-3a54826f4ad2/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "2.1.0",
-          "lastUpdateDate": "14/08/2026",
+          "version": "2.1.3",
+          "lastUpdateDate": "08/09/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.mykidskute"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "2.1.0",
-          "lastUpdateDate": "31/08/2026",
+          "version": "2.1.3",
+          "lastUpdateDate": "08/09/2026",
           "url": "https://apps.apple.com/app/id6759554484"
         }
       ]
@@ -165,7 +165,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 7,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/38/e6/3238e6ee-5093-eeef-2278-219eeb1f032f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/11/14/e711140e-8129-b48b-3132-e2f1d6f4b99c/PlayerIcon.png/512x512bb.png",
       "stores": [
         {
           "id": "ms-store",
@@ -213,8 +213,8 @@
         {
           "id": "ms-store",
           "name": "Microsoft Store",
-          "version": "1.0042",
-          "lastUpdateDate": "10/03/2026",
+          "version": "1.0046",
+          "lastUpdateDate": "05/09/2026",
           "url": "https://apps.microsoft.com/detail/xpfpb39dqxd8kl"
         },
         {
