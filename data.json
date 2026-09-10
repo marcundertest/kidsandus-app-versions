@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-09T16:03:48.898Z",
+  "lastUpdate": "2026-09-10T18:58:06.923Z",
   "apps": [
     {
       "id": "mykids",
@@ -49,20 +49,20 @@
       "id": "mylocker",
       "name": "MyLocker",
       "orderId": 3,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/87/ae/4287aeda-0376-01b4-65af-c7b6417a3d9c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8c/67/28/8c672899-8668-3a14-a064-3b01366b5b05/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.4.4",
-          "lastUpdateDate": "13/05/2026",
+          "version": "1.4.5",
+          "lastUpdateDate": "08/09/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.alumnos"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.4.4",
-          "lastUpdateDate": "31/08/2026",
+          "version": "1.4.5",
+          "lastUpdateDate": "10/09/2026",
           "url": "https://apps.apple.com/app/id1258072089"
         }
       ]
