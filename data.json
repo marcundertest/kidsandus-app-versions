@@ -1,24 +1,24 @@
 {
-  "lastUpdate": "2026-09-10T18:58:06.923Z",
+  "lastUpdate": "2026-09-22T10:03:21.467Z",
   "apps": [
     {
       "id": "mykids",
       "name": "MyKids",
       "orderId": 1,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/15/24/d7/1524d7cd-63d8-b5ce-6618-a1de635ba33e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/b1/b4/3eb1b493-0ef2-4a7d-f656-d58f5958b415/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.5.3",
-          "lastUpdateDate": "04/09/2026",
+          "version": "1.5.5",
+          "lastUpdateDate": "17/09/2026",
           "url": "https://play.google.com/store/apps/details?id=es.kidsandus.mykids"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.5.3",
-          "lastUpdateDate": "08/09/2026",
+          "version": "1.5.5",
+          "lastUpdateDate": "21/09/2026",
           "url": "https://apps.apple.com/app/id1435773819"
         }
       ]
@@ -122,41 +122,41 @@
       "id": "ppbb",
       "name": "P&P and B&B",
       "orderId": 6,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9c/f8/08/9cf808fe-88cf-8508-4e58-800caeb92f96/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/74/86/c6/7486c616-95bd-e73a-2487-c726037bdafd/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
           "name": "Microsoft Store",
-          "version": "2.0.0",
-          "lastUpdateDate": "30/08/2026",
+          "version": "2.0.1",
+          "lastUpdateDate": "11/09/2026",
           "url": "https://apps.microsoft.com/detail/xp9m1b7t3zd4lt"
         },
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "2.0.0",
-          "lastUpdateDate": "13/08/2026",
+          "version": "2.0.1",
+          "lastUpdateDate": "10/09/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway.ppbb.pro"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "2.0.0",
-          "lastUpdateDate": "17/08/2026",
+          "version": "2.0.1",
+          "lastUpdateDate": "11/09/2026",
           "url": "https://apps.apple.com/app/id6749446790"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "2.0.0",
-          "lastUpdateDate": "17/08/2026",
+          "version": "2.0.1",
+          "lastUpdateDate": "11/09/2026",
           "url": "https://apps.apple.com/app/id6749446790"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "2.0.0",
-          "lastUpdateDate": "17/08/2026",
+          "version": "2.0.1",
+          "lastUpdateDate": "14/09/2026",
           "url": "https://appgallery.huawei.com/app/C114967515"
         }
       ]
