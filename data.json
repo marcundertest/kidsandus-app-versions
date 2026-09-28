@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-28T15:02:05.590Z",
+  "lastUpdate": "2026-09-28T17:46:10.796Z",
   "apps": [
     {
       "id": "mykids",
@@ -251,7 +251,7 @@
       "id": "mysteries",
       "name": "Mysteries",
       "orderId": 9,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/78/f1/e3/78f1e3ae-cbf5-4a90-90e6-e41a51e2d553/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHM0OYfiFeMI2p9MWie0CvL99U4GA1gf6_kayTt_kBblFwHwo8BW8JXlqfnYxKPmmBaq97j9ByiNVsrU5Vi788i5ESVXQM46gXXCjo90xycFevq5j2q_0E51opBtlKWjshaqEAs5pzr8gqU5lb7wbnLM-&format=source",
       "stores": [
         {
           "id": "ms-store",
