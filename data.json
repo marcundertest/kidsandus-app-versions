@@ -1,24 +1,24 @@
 {
-  "lastUpdate": "2026-09-24T18:40:28.951Z",
+  "lastUpdate": "2026-09-28T15:02:05.590Z",
   "apps": [
     {
       "id": "mykids",
       "name": "MyKids",
       "orderId": 1,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/b1/b4/3eb1b493-0ef2-4a7d-f656-d58f5958b415/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/07/bc/03/07bc03ef-62d9-d548-e7b3-a189e96a71fa/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.5.5",
-          "lastUpdateDate": "17/09/2026",
+          "version": "1.5.7",
+          "lastUpdateDate": "22/09/2026",
           "url": "https://play.google.com/store/apps/details?id=es.kidsandus.mykids"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.5.5",
-          "lastUpdateDate": "21/09/2026",
+          "version": "1.5.7",
+          "lastUpdateDate": "28/09/2026",
           "url": "https://apps.apple.com/app/id1435773819"
         }
       ]
