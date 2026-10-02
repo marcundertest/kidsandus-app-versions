@@ -1,11 +1,11 @@
 {
-  "lastUpdate": "2026-09-28T17:46:10.796Z",
+  "lastUpdate": "2026-10-02T17:26:20.620Z",
   "apps": [
     {
       "id": "mykids",
       "name": "MyKids",
       "orderId": 1,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/07/bc/03/07bc03ef-62d9-d548-e7b3-a189e96a71fa/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/24/bf/86/24bf8672-3147-a0d3-ec89-8b7646ce1d9b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
@@ -17,8 +17,8 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.5.7",
-          "lastUpdateDate": "28/09/2026",
+          "version": "1.5.8",
+          "lastUpdateDate": "02/10/2026",
           "url": "https://apps.apple.com/app/id1435773819"
         }
       ]
@@ -93,27 +93,27 @@
       "id": "sam-emma",
       "name": "Sam&Emma",
       "orderId": 5,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/36/e8/b3/36e8b3cd-4cdb-761d-d6cf-5990b60bfeb2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fc/63/c6/fc63c640-eeb4-a34c-cec1-e3e1d2ba6674/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.1.0",
-          "lastUpdateDate": "26/08/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "18/09/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway.se.pro"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.1.0",
-          "lastUpdateDate": "28/08/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "30/09/2026",
           "url": "https://apps.apple.com/app/id6768969669"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "1.1.0",
-          "lastUpdateDate": "01/09/2026",
+          "version": "1.2.0",
+          "lastUpdateDate": "30/09/2026",
           "url": "https://appgallery.huawei.com/app/C117692333"
         }
       ]
@@ -165,7 +165,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 7,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/38/e6/3238e6ee-5093-eeef-2278-219eeb1f032f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/11/14/e711140e-8129-b48b-3132-e2f1d6f4b99c/PlayerIcon.png/512x512bb.png",
       "stores": [
         {
           "id": "ms-store",
@@ -251,7 +251,7 @@
       "id": "mysteries",
       "name": "Mysteries",
       "orderId": 9,
-      "icon": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHM0OYfiFeMI2p9MWie0CvL99U4GA1gf6_kayTt_kBblFwHwo8BW8JXlqfnYxKPmmBaq97j9ByiNVsrU5Vi788i5ESVXQM46gXXCjo90xycFevq5j2q_0E51opBtlKWjshaqEAs5pzr8gqU5lb7wbnLM-&format=source",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/f9/17/aef9171e-d8a8-ec7c-b411-d42171466970/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
@@ -270,22 +270,22 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.5.0",
-          "lastUpdateDate": "29/08/2026",
+          "version": "1.6.0",
+          "lastUpdateDate": "30/09/2026",
           "url": "https://apps.apple.com/app/id6756563027"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "1.5.0",
-          "lastUpdateDate": "29/08/2026",
+          "version": "1.6.0",
+          "lastUpdateDate": "30/09/2026",
           "url": "https://apps.apple.com/app/id6756563027"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "1.5.0",
-          "lastUpdateDate": "28/08/2026",
+          "version": "1.6.0",
+          "lastUpdateDate": "02/10/2026",
           "url": "https://appgallery.huawei.com/app/C116404975"
         }
       ]
