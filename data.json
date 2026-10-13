@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-07T17:42:36.450Z",
+  "lastUpdate": "2026-10-13T15:07:09.031Z",
   "apps": [
     {
       "id": "mykids",
@@ -93,7 +93,7 @@
       "id": "sam-emma",
       "name": "Sam&Emma",
       "orderId": 5,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fc/63/c6/fc63c640-eeb4-a34c-cec1-e3e1d2ba6674/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f0/ed/50/f0ed5004-7cd0-9edf-1db1-2b7f0c00e54d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
@@ -105,8 +105,8 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.2.0",
-          "lastUpdateDate": "30/09/2026",
+          "version": "1.2.1",
+          "lastUpdateDate": "06/10/2026",
           "url": "https://apps.apple.com/app/id6768969669"
         },
         {
@@ -165,7 +165,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 7,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/11/14/e711140e-8129-b48b-3132-e2f1d6f4b99c/PlayerIcon.png/512x512bb.png",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/38/e6/3238e6ee-5093-eeef-2278-219eeb1f032f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
