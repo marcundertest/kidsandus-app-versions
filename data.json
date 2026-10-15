@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-13T15:07:09.031Z",
+  "lastUpdate": "2026-10-15T11:31:16.849Z",
   "apps": [
     {
       "id": "mykids",
@@ -251,20 +251,20 @@
       "id": "mysteries",
       "name": "Mysteries",
       "orderId": 9,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9e/47/a8/9e47a87a-3575-7391-2a86-19fe3245ab4b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://appimg-dre.dbankcdn.com/application/icon144/65/660f9e5acefd41c6b7fa9fa2aae50c58.png",
       "stores": [
         {
           "id": "ms-store",
           "name": "Microsoft Store",
-          "version": "1.5.0",
-          "lastUpdateDate": "07/10/2026",
+          "version": "1.6.1",
+          "lastUpdateDate": "13/10/2026",
           "url": "https://apps.microsoft.com/detail/xp8ccn2wn0bm7f"
         },
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.6.0",
-          "lastUpdateDate": "28/09/2026",
+          "version": "1.6.1",
+          "lastUpdateDate": "05/10/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway.my.pro"
         },
         {
