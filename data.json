@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-15T11:31:16.849Z",
+  "lastUpdate": "2026-10-16T07:41:39.417Z",
   "apps": [
     {
       "id": "mykids",
@@ -49,7 +49,7 @@
       "id": "mylocker",
       "name": "MyLocker",
       "orderId": 3,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8c/67/28/8c672899-8668-3a14-a064-3b01366b5b05/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4c/81/73/4c817302-943d-b8d8-7bc2-beb2f7d54b29/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
@@ -61,8 +61,8 @@
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.4.5",
-          "lastUpdateDate": "10/09/2026",
+          "version": "1.4.6",
+          "lastUpdateDate": "15/10/2026",
           "url": "https://apps.apple.com/app/id1258072089"
         }
       ]
@@ -71,20 +71,20 @@
       "id": "mylocker-kute",
       "name": "MyLocker KUTE",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a4/a0/1c/a4a01c3a-7c72-532e-508a-b8983e3e3ab1/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d1/81/93/d18193b7-97da-e8a2-19b6-f299c2af4584/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "2.0.1",
-          "lastUpdateDate": "13/07/2026",
+          "version": "2.0.3",
+          "lastUpdateDate": "22/09/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.mylockerkute"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "2.0.2",
-          "lastUpdateDate": "05/08/2026",
+          "version": "2.0.3",
+          "lastUpdateDate": "15/10/2026",
           "url": "https://apps.apple.com/app/id6759555326"
         }
       ]
@@ -165,7 +165,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 7,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/38/e6/3238e6ee-5093-eeef-2278-219eeb1f032f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/11/14/e711140e-8129-b48b-3132-e2f1d6f4b99c/PlayerIcon.png/512x512bb.png",
       "stores": [
         {
           "id": "ms-store",
@@ -251,7 +251,7 @@
       "id": "mysteries",
       "name": "Mysteries",
       "orderId": 9,
-      "icon": "https://appimg-dre.dbankcdn.com/application/icon144/65/660f9e5acefd41c6b7fa9fa2aae50c58.png",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9e/47/a8/9e47a87a-3575-7391-2a86-19fe3245ab4b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "ms-store",
