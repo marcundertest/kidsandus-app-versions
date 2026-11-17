@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-12T13:10:45.602Z",
+  "lastUpdate": "2026-11-17T12:48:14.101Z",
   "apps": [
     {
       "id": "mykids",
@@ -49,20 +49,20 @@
       "id": "mylocker",
       "name": "MyLocker",
       "orderId": 3,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/60/88/4c/60884c48-0a5e-5e32-82fd-68163826bcf2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6f/14/82/6f1482f0-fe5e-d2f7-df28-7984c755c22f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "1.6.0",
-          "lastUpdateDate": "28/10/2026",
+          "version": "1.6.1",
+          "lastUpdateDate": "03/11/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.alumnos"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "1.6.0",
-          "lastUpdateDate": "29/10/2026",
+          "version": "1.6.1",
+          "lastUpdateDate": "16/11/2026",
           "url": "https://apps.apple.com/app/id1258072089"
         }
       ]
@@ -71,20 +71,20 @@
       "id": "mylocker-kute",
       "name": "MyLocker KUTE",
       "orderId": 4,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/45/84/bd/4584bd8f-a75c-ce25-9144-3c4f999f00cb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bb/53/87/bb5387a1-62e5-4776-4c3d-7cc206ec4c32/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "stores": [
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "2.2.0",
-          "lastUpdateDate": "28/10/2026",
+          "version": "2.2.1",
+          "lastUpdateDate": "03/11/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.mylockerkute"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "2.2.0",
-          "lastUpdateDate": "29/10/2026",
+          "version": "2.2.1",
+          "lastUpdateDate": "16/11/2026",
           "url": "https://apps.apple.com/app/id6759555326"
         }
       ]
@@ -165,7 +165,7 @@
       "id": "animal-planet",
       "name": "Animal Planet",
       "orderId": 7,
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/38/e6/3238e6ee-5093-eeef-2278-219eeb1f032f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/36/34/2a36349b-23f2-2ec4-6f6d-21df22b0009b/PlayerIcon.png/512x512bb.png",
       "stores": [
         {
           "id": "ms-store",
@@ -177,29 +177,29 @@
         {
           "id": "google-play",
           "name": "Google Play",
-          "version": "2.1.0",
-          "lastUpdateDate": "24/08/2026",
+          "version": "2.2.0",
+          "lastUpdateDate": "11/11/2026",
           "url": "https://play.google.com/store/apps/details?id=com.kidsandus.myway"
         },
         {
           "id": "app-store-ios",
           "name": "App Store iOS",
-          "version": "2.1.0",
-          "lastUpdateDate": "26/08/2026",
+          "version": "2.2.0",
+          "lastUpdateDate": "16/11/2026",
           "url": "https://apps.apple.com/app/id6457362370"
         },
         {
           "id": "app-store-macos",
           "name": "App Store macOS",
-          "version": "2.1.0",
-          "lastUpdateDate": "26/08/2026",
+          "version": "2.2.0",
+          "lastUpdateDate": "16/11/2026",
           "url": "https://apps.apple.com/app/id6502336967"
         },
         {
           "id": "appgallery",
           "name": "Huawei AppGallery",
-          "version": "2.1.0",
-          "lastUpdateDate": "27/08/2026",
+          "version": "2.2.0",
+          "lastUpdateDate": "17/11/2026",
           "url": "https://appgallery.huawei.com/app/C112233051"
         }
       ]
